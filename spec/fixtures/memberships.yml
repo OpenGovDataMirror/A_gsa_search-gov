@@ -1,0 +1,34 @@
+one:
+  affiliate: :usagov_affiliate
+  user: :affiliate_manager
+two:
+  affiliate: :gobiernousa_affiliate
+  user: :affiliate_manager
+three:
+  affiliate: :power_affiliate
+  user: :affiliate_manager
+four:
+  affiliate: :basic_affiliate
+  user: :affiliate_manager
+  gets_daily_snapshot_email: true
+five:
+  affiliate: :another_affiliate
+  user: :another_affiliate_manager
+six:
+  affiliate: :admin_affiliate
+  user: :admin_affiliate
+seven:
+  affiliate: :non_existent_affiliate
+  user: :another_affiliate_manager
+eight:
+  affiliate: :spanish_affiliate
+  user: :affiliate_manager
+nine:
+  affiliate: :non_existent_affiliate
+  user: :affiliate_manager_requires_manual_approval
+ten:
+  affiliate: :site_with_one_user
+  user: :affiliate_manager_with_one_site
+eleven:
+  affiliate: :affiliate_for_user_with_default_site
+  user: :affiliate_manager_with_a_default_site

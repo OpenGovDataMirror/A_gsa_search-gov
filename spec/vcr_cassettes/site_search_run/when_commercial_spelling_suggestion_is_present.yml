@@ -1,0 +1,233 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bingapis.com/api/v6/search?AppId=<BING_V6_APP_ID>&count=20&mkt=en-US&offset=0&q=militry%20(site:www.whitehouse.gov/)&responseFilter=WebPages&safeSearch=moderate&textDecorations=false&traffictype=test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - USASearch
+      Ocp-Apim-Subscription-Key:
+      - my_api_key
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '4313'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Tue, 31 Aug 2021 20:32:23 GMT
+      Vary:
+      - Accept-Encoding
+      P3p:
+      - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+      Set-Cookie:
+      - MUID=3694FAB4A386681704FCEA10A27B697A; domain=.bingapis.com; expires=Sun,
+        25-Sep-2022 20:33:23 GMT; path=/; secure; SameSite=None
+      - MUIDB=3694FAB4A386681704FCEA10A27B697A; expires=Sun, 25-Sep-2022 20:33:23
+        GMT; path=/; HttpOnly
+      - SRCHD=AF=NOFORM; domain=.bingapis.com; expires=Thu, 31-Aug-2023 20:33:23 GMT;
+        path=/
+      - SRCHHPGUSR=SRCHLANG=en; domain=.bingapis.com; expires=Thu, 31-Aug-2023 20:33:23
+        GMT; path=/
+      - SRCHUID=V=2&GUID=F36FE6B2A47744138242369EE60201CA&dmnchg=1; domain=.bingapis.com;
+        expires=Thu, 31-Aug-2023 20:33:23 GMT; path=/
+      - SRCHUSR=DOB=20210831; domain=.bingapis.com; expires=Thu, 31-Aug-2023 20:33:23
+        GMT; path=/
+      - _EDGE_S=F=1&SID=0B93D0BD5DD867582DE8C0195C25662B&mkt=en-us; domain=.bingapis.com;
+        path=/; HttpOnly
+      - _EDGE_V=1; domain=.bingapis.com; expires=Sun, 25-Sep-2022 20:33:23 GMT; path=/;
+        HttpOnly
+      - _SS=SID=0B93D0BD5DD867582DE8C0195C25662B; domain=.bingapis.com; path=/
+      X-Snr-Routing:
+      - '1'
+      Bingapis-Traceid:
+      - 06A80C738F47466EB4511BE9F71FEBEA
+      X-Msedge-Clientid:
+      - 3694FAB4A386681704FCEA10A27B697A
+      X-Msapi-Userstate:
+      - 3a22
+      Bingapis-Market:
+      - en-US
+      X-Cache:
+      - CONFIG_NOCACHE
+      X-Msedge-Ref:
+      - 'Ref A: 06A80C738F47466EB4511BE9F71FEBEA Ref B: BLUEDGE0508 Ref C: 2021-08-31T20:33:23Z'
+      Date:
+      - Tue, 31 Aug 2021 20:33:23 GMT
+    body:
+      encoding: UTF-8
+      string: '{"_type": "SearchResponse", "instrumentation": {"pingUrlBase": "https:\/\/www.bingapis.com\/api\/ping?IG=B492150AB64640B892C189630D53BF2B&CID=3694FAB4A386681704FCEA10A27B697A&ID=",
+        "pageLoadPingUrl": "https:\/\/www.bingapis.com\/api\/ping\/pageload?IG=B492150AB64640B892C189630D53BF2B&CID=3694FAB4A386681704FCEA10A27B697A&Type=Event.CPT&DATA=0"},
+        "queryContext": {"originalQuery": "militry (site:www.whitehouse.gov\/)", "alteredQuery":
+        "military", "alterationOverrideQuery": "+militry (site:www.whitehouse.gov\/)",
+        "adultIntent": false}, "webPages": {"webSearchUrl": "https:\/\/www.bing.com\/search?q=militry+(site%3awww.whitehouse.gov%2f)",
+        "webSearchUrlPingSuffix": "DevEx,5439.1", "totalEstimatedMatches": 224000,
+        "value": [{"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.0", "name":
+        "Readout of White House Meeting with Veteran and Military ...", "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/27\/readout-of-white-house-meeting-with-veteran-and-military-family-organizations\/",
+        "urlPingSuffix": "DevEx,5065.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/27\/readout-of...",
+        "snippet": "Readout of White. House Meeting with Veteran and Military Family
+        Organizations. August 27, 2021 • Statements and Releases. Today, Secretary
+        of Veterans Affairs Dennis McDonough, Senior Advisor ...", "dateLastCrawled":
+        "2021-08-27T23:28:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.1",
+        "name": "Statement by President Joe Biden on the Evacuation Mission ...",
+        "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/28\/statement-by-president-joe-biden-on-the-evacuation-mission-in-kabul\/",
+        "urlPingSuffix": "DevEx,5081.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/28\/statement-by...",
+        "snippet": "Statement by President Joe. Biden on the Evacuation Mission in.
+        Kabul. This morning, I met with my national security team in Washington and
+        my commanders in the field. We discussed the strike that ...", "dateLastCrawled":
+        "2021-08-29T05:04:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.2",
+        "name": "Remarks by President Biden on Evacuations in Afghanistan ...", "url":
+        "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/08\/20\/remarks-by-president-biden-on-evacuations-in-afghanistan\/",
+        "urlPingSuffix": "DevEx,5097.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/08\/20\/remarks-by...",
+        "snippet": "The military has secured the airport, as you mentioned, but will
+        you sign off on sending U.S. troops into Kabul to evacuate Americans who haven’t
+        been able to get to the airport safely?", "dateLastCrawled": "2021-08-29T13:05:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.3", "name": "White
+        House Announces Additional Staff | The White House", "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/03\/09\/white-house-announces-additional-staff\/",
+        "urlPingSuffix": "DevEx,5111.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/03\/09\/white-house...",
+        "snippet": "White House Military Office Maju Varghese, Director of the White
+        House Military Office Maju Varghese most recently served as Executive Director
+        of the Presidential Inaugural Committee. Prior to ...", "dateLastCrawled":
+        "2021-08-27T14:10:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.4",
+        "name": "Service Academies Application | The White House", "url": "https:\/\/www.whitehouse.gov\/service-academy-nominations\/service-academies-application\/",
+        "urlPingSuffix": "DevEx,5124.1", "displayUrl": "https:\/\/www.whitehouse.gov\/service-academy-nominations\/service-academies-application",
+        "snippet": "The Vice President is authorized to nominate individuals to the
+        United States Military, Naval, and Air Force Academies but can not nominate
+        to the U.S. Merchant Marine Academy and does not ...", "dateLastCrawled":
+        "2021-08-29T04:19:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.5",
+        "name": "FACT SHEET: The American Jobs Plan Supports Veterans | The ...",
+        "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/04\/15\/fact-sheet-the-american-jobs-plan-supports-veterans\/",
+        "urlPingSuffix": "DevEx,5138.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/04\/15\/fact-sheet-the...",
+        "snippet": "Roughly 200,000 service members transition from military service
+        each year, the majority of whom will enter the civilian labor force. Many
+        veterans have experienced unemployment and other economic ...", "dateLastCrawled":
+        "2021-08-26T09:43:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.6",
+        "name": "Remarks by President Biden to U.S. Air Force Personnel and ...",
+        "url": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/06\/09\/remarks-by-president-biden-to-u-s-air-force-personnel-and-families-stationed-at-royal-air-force-mildenhall\/",
+        "urlPingSuffix": "DevEx,5152.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/06\/09\/remarks-by...",
+        "snippet": "The U.S. and the UK are both founding members of NATO — the strongest
+        military and political alliance in the history of the world. And that’s not
+        hyperbole.", "dateLastCrawled": "2021-08-28T06:53:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.7",
+        "name": "Interim National Security Strategic Guidance | The White House",
+        "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/03\/03\/interim-national-security-strategic-guidance\/",
+        "urlPingSuffix": "DevEx,5166.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/03\/03\/interim...",
+        "snippet": "Guidance. March 03, 2021 • Statements and Releases. Today, the
+        Administration released the Interim National Security Strategic Guidance,
+        attached. This interim guidance has been issued to convey ...", "dateLastCrawled":
+        "2021-08-29T17:29:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.8",
+        "name": "President Biden Announces 10 Key Nominations | The White House",
+        "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/06\/president-biden-announces-10-key-nominations\/",
+        "urlPingSuffix": "DevEx,5180.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/06\/president...",
+        "snippet": "Her CSIS research focused on reinforcing the principled foundations
+        of U.S. defense strategy and military operations, including the responsible
+        role of the U.S. military in Defense Support of ...", "dateLastCrawled": "2021-08-28T06:20:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.9", "name": "Steps
+        for the Service Academies Application Process | The ...", "url": "https:\/\/www.whitehouse.gov\/service-academy-nominations\/steps\/",
+        "urlPingSuffix": "DevEx,5193.1", "displayUrl": "https:\/\/www.whitehouse.gov\/service-academy-nominations\/steps",
+        "snippet": "The minimum SAT scores for the academies are 500 verbal and 500
+        math. The average SAT scores at the academies are 540-620 verbal and 630-710
+        math. The minimum ACT scores for the academies are 21 ...", "dateLastCrawled":
+        "2021-08-28T04:12:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.10",
+        "name": "Object Class Analysis", "url": "https:\/\/www.whitehouse.gov\/wp-content\/uploads\/2021\/05\/objclass_fy22.pdf",
+        "urlPingSuffix": "DevEx,5205.1", "displayUrl": "https:\/\/www.whitehouse.gov\/wp-content\/uploads\/2021\/05\/objclass_fy22.pdf",
+        "snippet": "These major object classes are then divided into smaller classes.
+        The tables included in this report provide the amounts shown in the object
+        class schedules of the 2022 Budget Appendix.The 2020 ...", "dateLastCrawled":
+        "2021-08-26T00:23:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.11",
+        "name": "Statement by President Joe Biden on Afghanistan | The ...", "url":
+        "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/14\/statement-by-president-joe-biden-on-afghanistan\/",
+        "urlPingSuffix": "DevEx,5218.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/08\/14\/statement-by...",
+        "snippet": "First, based on the recommendations of our diplomatic, military,
+        and intelligence teams, I have authorized the deployment of approximately
+        5,000 U.S. troops to make sure we can have an orderly and ...", "dateLastCrawled":
+        "2021-08-29T01:18:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.12",
+        "name": "Executive Order on Addressing the Threat from Securities ...", "url":
+        "https:\/\/www.whitehouse.gov\/briefing-room\/presidential-actions\/2021\/06\/03\/executive-order-on-addressing-the-threat-from-securities-investments-that-finance-certain-companies-of-the-peoples-republic-of-china\/",
+        "urlPingSuffix": "DevEx,5232.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/presidential-actions\/2021\/06\/03\/executive...",
+        "snippet": "By the authority vested in me as President by the Constitution
+        and the laws of the United States of America, including the International
+        Emergency Economic Powers Act (50 U.S.C. 1701 et seq ...", "dateLastCrawled":
+        "2021-08-27T19:12:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.13",
+        "name": "Remarks by President Biden on the Drawdown of U.S. Forces ...", "url":
+        "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/07\/08\/remarks-by-president-biden-on-the-drawdown-of-u-s-forces-in-afghanistan\/",
+        "urlPingSuffix": "DevEx,5246.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/07\/08\/remarks-by...",
+        "snippet": "East Room 2:09 P.M. EDT THE PRESIDENT: Good afternoon. Earlier
+        today, I was briefed by our senior military and national security leaders
+        on the status of the drawdown of U.S. forces and allied ...", "dateLastCrawled":
+        "2021-08-29T07:16:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.14",
+        "name": "SECTION 83—OBJECT CLASSIFICATION (MAX SCHEDULE O)", "url": "https:\/\/www.whitehouse.gov\/wp-content\/uploads\/2018\/06\/s83.pdf",
+        "urlPingSuffix": "DevEx,5258.1", "displayUrl": "https:\/\/www.whitehouse.gov\/wp-content\/uploads\/2018\/06\/s83.pdf",
+        "snippet": "Federal civilian employees, military personnel, and non-Federal
+        personnel. Object class 11 covers object classes 11.1 through 11.8. 11.1 Full-time
+        permanent :", "dateLastCrawled": "2021-08-28T06:05:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.15",
+        "name": "FACT SHEET: President Biden Signs Executive Order ...", "url": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/06\/25\/fact-sheet-president-biden-signs-executive-order-advancing-diversity-equity-inclusion-and-accessibility-in-the-federal-government\/",
+        "urlPingSuffix": "DevEx,5271.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/06\/25\/fact-sheet...",
+        "snippet": "Today, President Biden signed an Executive Order to advance diversity,
+        equity, inclusion, and accessibility (DEIA) in the Federal workforce. This
+        Executive Order reaffirms that the United States ...", "dateLastCrawled":
+        "2021-08-28T07:01:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.16",
+        "name": "FACT SHEET: Executive Order Addressing the Threat from ...", "url":
+        "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/06\/03\/fact-sheet-executive-order-addressing-the-threat-from-securities-investments-that-finance-certain-companies-of-the-peoples-republic-of-china\/",
+        "urlPingSuffix": "DevEx,5285.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/statements-releases\/2021\/06\/03\/fact-sheet...",
+        "snippet": "Solidify and strengthen a previous E.O to prohibit U.S. investments
+        in the military-industrial complex of the People’s Republic of China: This
+        E.O. will amend E.O. 13959 by creating a ...", "dateLastCrawled": "2021-08-29T10:18:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.17", "name": "Remarks
+        by President Biden on the Terror Attack at Hamid ...", "url": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/08\/26\/remarks-by-president-biden-on-the-terror-attack-at-hamid-karzai-international-airport\/",
+        "urlPingSuffix": "DevEx,5301.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/08\/26\/remarks-by...",
+        "snippet": "But the military — from the Chairman of the Joint Chiefs, the
+        Joint Chiefs, the commanders in the field — have all contacted me one way
+        or another, usually by letter, saying they subscribe to ...", "dateLastCrawled":
+        "2021-08-29T07:04:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.18",
+        "name": "Remarks by President Biden At Signing of An Executive ...", "url":
+        "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/07\/09\/remarks-by-president-biden-at-signing-of-an-executive-order-promoting-competition-in-the-american-economy\/",
+        "urlPingSuffix": "DevEx,5315.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/speeches-remarks\/2021\/07\/09\/remarks-by...",
+        "snippet": "Military families, for example, they’re often on the move between
+        states with each new assignment. So you have a woman in the military, her
+        husband is following her, or vice versa. Guess what?", "dateLastCrawled":
+        "2021-08-28T14:29:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.19",
+        "name": "Memorandum on the Designation of the Department of ...", "url": "https:\/\/www.whitehouse.gov\/briefing-room\/presidential-actions\/2021\/08\/29\/memorandum-on-the-designation-of-the-department-of-homeland-security-as-lead-federal-department-for-facilitating-the-entry-of-vulnerable-afghans-into-the-united-states\/",
+        "urlPingSuffix": "DevEx,5331.1", "displayUrl": "https:\/\/www.whitehouse.gov\/briefing-room\/presidential-actions\/2021\/08\/29\/memorandum-on...",
+        "snippet": "MEMORANDUM FOR THE HEADS OF EXECUTIVE DEPARTMENTS AND AGENCIES
+        SUBJECT: Designation of the Department of Homeland Security as Lead Federal
+        Department for Facilitating the Entry of Vulnerable ...", "dateLastCrawled":
+        "2021-08-30T00:38:00.0000000Z"}]}, "rankingResponse": {"mainline": {"items":
+        [{"answerType": "WebPages", "resultIndex": 0, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.0"}},
+        {"answerType": "WebPages", "resultIndex": 1, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.1"}},
+        {"answerType": "WebPages", "resultIndex": 2, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.2"}},
+        {"answerType": "WebPages", "resultIndex": 3, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.3"}},
+        {"answerType": "WebPages", "resultIndex": 4, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.4"}},
+        {"answerType": "WebPages", "resultIndex": 5, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.5"}},
+        {"answerType": "WebPages", "resultIndex": 6, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.6"}},
+        {"answerType": "WebPages", "resultIndex": 7, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.7"}},
+        {"answerType": "WebPages", "resultIndex": 8, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.8"}},
+        {"answerType": "WebPages", "resultIndex": 9, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.9"}},
+        {"answerType": "WebPages", "resultIndex": 10, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.10"}},
+        {"answerType": "WebPages", "resultIndex": 11, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.11"}},
+        {"answerType": "WebPages", "resultIndex": 12, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.12"}},
+        {"answerType": "WebPages", "resultIndex": 13, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.13"}},
+        {"answerType": "WebPages", "resultIndex": 14, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.14"}},
+        {"answerType": "WebPages", "resultIndex": 15, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.15"}},
+        {"answerType": "WebPages", "resultIndex": 16, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.16"}},
+        {"answerType": "WebPages", "resultIndex": 17, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.17"}},
+        {"answerType": "WebPages", "resultIndex": 18, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.18"}},
+        {"answerType": "WebPages", "resultIndex": 19, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.19"}}]}}}'
+    http_version:
+  recorded_at: Tue, 31 Aug 2021 20:33:23 GMT
+recorded_with: VCR 4.0.0

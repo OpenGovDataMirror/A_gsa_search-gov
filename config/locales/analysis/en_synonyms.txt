@@ -1,0 +1,4 @@
+# Import these from https://github.com/GSA/punchcard
+fish, fishing
+protect, protection
+gas, petrol

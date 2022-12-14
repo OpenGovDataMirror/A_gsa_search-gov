@@ -1,0 +1,31 @@
+usagov_affiliate:
+  affiliate: :usagov_affiliate
+  name: Images
+
+gobiernousa_affiliate:
+  affiliate: :gobiernousa_affiliate
+  name: Imágenes
+
+power_affiliate:
+  affiliate: :power_affiliate
+  name: Images
+
+basic_affiliate:
+  affiliate: :basic_affiliate
+  name: Images
+
+another_affiliate:
+  affiliate: :another_affiliate
+  name: Images
+
+admin_affiliate:
+  affiliate: :admin_affiliate
+  name: Images
+
+non_existent_affiliate:
+  affiliate: :non_existent_affiliate
+  name: Images
+
+spanish_affiliate:
+  affiliate: :spanish_affiliate
+  name: Imágenes

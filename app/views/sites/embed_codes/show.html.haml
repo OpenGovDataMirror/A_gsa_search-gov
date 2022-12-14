@@ -1,0 +1,15 @@
+= content_for_site_page_title @site, 'Code Snippets'
+.sub-nav-heading
+  %h2 Code Snippets
+  .action-bar
+    %ul
+      = list_item_with_link_to_current_help_page
+
+%h3 Form Snippet
+= find_and_preserve do
+  = render 'form_embed_code_text_area'
+
+%h3 Type-ahead search and Search.gov Tag Snippet
+= find_and_preserve do
+  = render 'bottom_page_embed_code_text_area'
+

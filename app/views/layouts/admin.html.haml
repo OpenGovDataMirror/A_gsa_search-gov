@@ -1,0 +1,28 @@
+!!!strict
+%html{html_attrs('en-us')}
+  %head
+    %title Super Admin
+    = favicon_link_tag
+    = csrf_meta_tags
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}/
+    = stylesheet_link_tag 'admin'
+    /[if IE]
+      = stylesheet_link_tag 'admin_ie'
+    = javascript_include_tag 'https://www.google.com/jsapi'
+  %body
+    = render "/shared/program_header"
+    .outer-container
+      .inner-container
+        .container
+          .span-24.main
+            - if @parent_page_title.present? and @page_title.present?
+              = breadcrumbs([link_to("Super Admin", admin_home_page_path), link_to(@parent_page_title, { :action => :index }), @page_title])
+            - elsif @page_title
+              = breadcrumbs([link_to("Super Admin", admin_home_page_path), @page_title])
+            - elsif controller.class.uses_active_scaffold?
+              = breadcrumbs([link_to("Super Admin", admin_home_page_path), controller.active_scaffold_config.label])
+            .span-10.prepend-7.append-7= show_flash_messages
+            .clear
+            = yield
+    = javascript_include_tag 'admin'
+    = yield(:extra_javascript)

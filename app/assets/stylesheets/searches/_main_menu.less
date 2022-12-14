@@ -1,0 +1,307 @@
+#menu-button-wrapper {
+  .header-item();
+  float: right;
+
+  .menu-button-left & {
+    float: left;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    float: none;
+
+    .menu-button-left & {
+      float: none;
+    }
+  }
+
+}
+
+#menu-button {
+  position: relative;
+  float: right;
+  margin-right: @navbar-padding-horizontal;
+  padding: 9px;
+  .navbar-vertical-align(34px);
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 0;
+
+  .menu-button-left & {
+    float: left;
+    margin-right: 0;
+    margin-left: @navbar-padding-horizontal;
+
+    @media (min-width: @screen-md-min) {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    display: none;
+
+    &.has-browse-site {
+      display: block;
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+    float: none;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .menu-button-left & {
+      margin-left: 0;
+      right: auto;
+      left: 0;
+    }
+  }
+
+  > span {
+    float: left;
+
+    &.menu-text {
+      .sr-only();
+
+      @media (min-width: @screen-sm-min) {
+        display: none;
+      }
+    }
+
+    &.browse-site-text {
+      display: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        .sr-only();
+      }
+
+      @media (min-width: @screen-md-min) {
+        display: inline-block;
+        margin-left: 10px;
+        padding-top: 2px;
+        float: none;
+        font-size: 1.4em;
+        height: auto;
+        line-height: 1;
+        margin-left: 10px;
+        min-height: 1.4em;
+        min-width: 80px;
+        position: static;
+        text-align: left;
+        vertical-align: top;
+        width: auto;
+      }
+    }
+  }
+
+  .icon-bar {
+    clear: left;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+}
+
+.menu-item() {
+  .text-overflow();
+  border-left: 3px solid transparent;
+  font-size: 1.4em;
+  line-height: 1;
+  padding: 12px 10px 14px 21px;
+
+  &:hover {
+    text-decoration: underline;
+    background: transparent;
+  }
+  &:focus {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    padding: 10px 8px;
+  }
+
+  @media(min-width: @screen-md-min) {
+    padding: 6px 8px;
+  }
+}
+
+#main-menu-wrapper {
+  @media (min-width: @screen-sm-min) {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .menu-button-left & {
+    right: auto;
+    left: 0;
+  }
+
+  .show-menu & {
+    @media (min-width: @screen-sm-min) {
+      .transition(background 0.35s ease-in-out);
+      background: rgba(0,0,0,0.5);
+      bottom: 0;
+      filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000)";
+      left: 0;
+      right: 0;
+      zoom: 1;
+      z-index: @zindex-main-menu;
+    }
+  }
+}
+
+.menu {
+  padding-right: @navbar-padding-horizontal;
+  padding-left:  @navbar-padding-horizontal;
+  .clearfix();
+  -webkit-overflow-scrolling: touch;
+
+  @media (min-width: @screen-sm-min) {
+    .transition(right 0.35s ease-in-out, visibility 0.35s ease-in-out;);
+    display: block;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    bottom: 0;
+    overflow-y: auto;
+    visibility: visible;
+
+    #related-sites-menu-dropdown,
+    #search-menu-dropdown {
+      display: none;
+    }
+
+    &.collapse {
+      visibility: hidden;
+    }
+
+    .menu-button-left & {
+      .transition(left 0.35s ease-in-out, visibility 0.35s ease-in-out;);
+      right: auto;
+      left: -200px;
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+    #header-links-menu-dropdown > .dropdown-toggle {
+    display: none
+    }
+  }
+
+  .content-heading {
+    .sr-only();
+  }
+
+  > ul {
+    .nav();
+    margin: 0 -@navbar-padding-horizontal;
+
+    @media (min-width: @screen-sm-min) {
+      padding: 0 0 (@navbar-padding-horizontal/2);
+    }
+
+    @media (min-width: @screen-md-min) {
+      padding: (@navbar-padding-horizontal/2) 0;
+    }
+
+    > li > a, > li > span {
+      .menu-item();
+      font-weight: bold;
+    }
+
+    > li > span {
+      position: relative;
+      display: block;
+    }
+
+    .divider {
+      height: 1px;
+      margin: ((@line-height-computed / 2) - 1) 0;
+      overflow: hidden;
+
+      @media (min-width: @screen-sm-min) {
+        display: none;
+      }
+    }
+
+    > li > .dropdown-toggle {
+      .outline-on-focus();
+    }
+  }
+}
+
+.show-menu {
+  .menu {
+    @media (min-width: @screen-sm-min) {
+      right: 0px;
+    }
+  }
+
+  &.menu-button-left .menu {
+    @media (min-width: @screen-sm-min) {
+      right: auto;
+      left: 0px;
+    }
+  }
+
+  #main-menu-backdrop {
+    @media (min-width: @screen-sm-min) {
+      .opacity(0);
+      background-color: #000;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin-right: 200px;
+      z-index: @zindex-main-menu;
+    }
+  }
+
+  &.menu-button-left #main-menu-backdrop {
+    @media (min-width: @screen-sm-min) {
+      margin-left: 200px;
+      margin-right: auto;
+    }
+  }
+}
+
+.menu > ul > .dropdown {
+  > ul {
+    .nav();
+
+    > li > a, > li > span {
+      .menu-item();
+    }
+
+    > li > span {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &.collapsed {
+    > ul {
+      display: none;
+
+      @media (min-width: @screen-md-min) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.twitter-typeahead {
+  position: relative;
+}
+
+.tt-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: @zindex-dropdown;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  width: 100%;
+  padding: 5px 0 8px;
+  margin: 24px 0 0; // override default ul
+  list-style: none;
+  font-size: 1.8em;
+
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-fallback-border; // IE8 fallback
+  border: 1px solid @dropdown-border;
+  .box-shadow(0 6px 12px rgba(0,0,0,.175));
+  background-clip: padding-box;
+
+  @media (min-width: @screen-sm) {
+    margin-top: 8px;
+  }
+
+  .tt-suggestion {
+    display: block;
+    margin: 0;
+    padding: 3px 12px;
+    clear: both;
+    font-weight: normal;
+    color: @dropdown-link-color;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
+
+    &:hover,
+    &:focus,
+    &.tt-cursor {
+      background-color: @typeahead-background-color;
+      color: @dropdown-link-hover-color;
+      cursor: pointer;
+      outline: 0;
+      text-decoration: none;
+    }
+  }
+}
+
+.tt-hint {
+  .form-control();
+  color: @typeahead-hint-color;
+}
+

@@ -1,0 +1,156 @@
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  .input-outline-on-focus();
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+.form {
+  margin: 20px 8px;
+
+  h3 {
+    margin: 0;
+  }
+
+  label {
+    font-weight: bold;
+    &.multivalued {
+      .off-screen-text();
+    }
+    &.checkbox {
+      margin-bottom: 10px;
+    }
+  }
+
+  fieldset {
+    margin-bottom: 10px;
+    &.multivalued {
+      margin-bottom: 0;
+    }
+    label.checkbox, span.help-block, textarea {
+      margin-bottom: 0;
+    }
+  }
+
+  fieldset legend {
+    border-width: 0;
+    font-size: @baseFontSize;
+    font-weight: bold;
+    line-height: @baseLineHeight;
+    margin-bottom: 5px;
+  }
+
+  .help-block {
+    .muted;
+    width: 60%;
+  }
+
+  input[type='email'],
+  input[type='password'],
+  input[type='text'],
+  input[type='url'],
+  textarea {
+    width: 60%;
+  }
+
+  .table input[type='text'] {
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  input[type='text'].date, .color input[type='text'] {
+    width: 136px;
+  }
+
+  input[type='email'],
+  input[type='password'],
+  input[type='text'],
+  input[type='url'],
+  select {
+    font-size: (@baseFontSize * 1.25);
+    padding: 10px 6px;
+  }
+
+  .add-on.add-on-icon, .add-on.add-on-colorpicker {
+    height: 36px;
+    padding: 4px 5px 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .add-on.add-on-colorpicker {
+    height: 36px;
+    width: 36px;
+  }
+
+  select {
+    height: 42px;
+  }
+
+  .field_with_errors {
+    .control-group.error();
+
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+      &:focus {
+        outline-color: @outline-error-color;
+      }
+    }
+  }
+
+  .input-append div {
+    display: inline-block;
+    .ie7-inline-block();
+  }
+
+  .input-append.color .add-on i {
+    width: 36px;
+    height: 32px;
+  }
+
+  .required, .optional {
+    label {
+      display: inline-block;
+    }
+    span {
+      .muted();
+      font-weight: normal;
+    }
+  }
+
+  .tooltip-inner {
+    text-align: left;
+  }
+}
+
+.bootstrap-filestyle input[type='text'] {
+  margin-bottom: 0;
+}

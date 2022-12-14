@@ -1,0 +1,29 @@
+%h3 Faceted Navigation
+= f.label :left_nav_label, 'Label for Facets'
+= f.text_field :left_nav_label, maxlength: 20
+
+%table#sidebar.table.table-draggable
+  %thead
+    %tr.nodrag.nodrop
+      %th Name
+      %th Source
+      %th Setting
+  %tbody
+    %tr.nodrag.nodrop
+      %td
+        %i.fa.fa-reorder-black{ style: 'visibility: hidden' }
+        = f.label :default_search_label, nil, class: 'required hide'
+        = f.text_field :default_search_label, maxlength: 20
+      %td= link_to 'Domains', site_domains_path(@site)
+      %td.muted ON
+    - filter_navigations(@site, @site.navigations).each_with_index do |nav, index|
+      = f.fields_for :"#{render_navigable_field_name_for nav}", nav.navigable do |navigable_form|
+        = navigable_form.fields_for :navigation do |navigation_form|
+          %tr{ id: "navigation-#{nav.id}" }
+            %td
+              %i.draggable.fa.fa-reorder-black
+              = navigation_form.hidden_field :position, { value: index, class: 'position' }
+              = navigable_form.label :name, "#{nav.navigable_type.titleize} #{index}", class: 'hide'
+              = navigable_form.text_field :name, maxlength: 20
+            %td.cell-1x= link_to_navigable_facet_type(nav)
+            = navigation_switch_cell navigation_form, nav, index

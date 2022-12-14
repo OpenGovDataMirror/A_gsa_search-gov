@@ -1,0 +1,45 @@
+#jobs {
+  .content-block();
+
+  .content-heading.usajobs {
+    margin-right: 60px;
+
+    @media (min-width: @screen-sm-min) {
+      margin-right: 90px;
+    }
+  }
+
+  .usajobs-logo {
+    float: right;
+    width: 55px;
+
+    @media (min-width: @screen-sm-min) {
+      width: 85px;
+    }
+
+    img {
+      .img-responsive();
+    }
+  }
+
+  #job-1, #job-2, #job-3 {
+    display: block;
+  }
+
+  .field-separator {
+    display: none;
+    @media (min-width: @screen-sm) {
+      display: inline;
+    }
+  }
+
+  .job-locations-money, .job-dates {
+    @media (min-width: @screen-sm) {
+      display: inline;
+    }
+  }
+
+  .job-organization, .job-locations-money, .job-dates {
+    font-size: @font-size-default;
+  }
+}

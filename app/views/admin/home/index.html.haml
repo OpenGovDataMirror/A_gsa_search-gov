@@ -1,0 +1,60 @@
+%h1 Super Admin
+
+%h2 Administration
+%ul
+  %li=link_to("Users", admin_users_path)
+  %li=link_to("Sites", admin_affiliates_path)
+  %li=link_to('Rss Feeds', admin_rss_feeds_path)
+  %li=link_to('Rss Feed Urls', admin_rss_feed_urls_path)
+  %li=link_to("System Alerts", admin_system_alerts_path)
+  %li=link_to("Outbound Rate Limits", admin_outbound_rate_limits_path)
+  %li=link_to("Excluded Domains", admin_excluded_domains_path)
+  %li=link_to("Search.gov Domains", admin_searchgov_domains_path)
+
+%h2 Type Ahead & Query Routing
+%ul
+  %li=link_to("Filters", admin_sayt_filters_path)
+  %li=link_to("Misspellings", admin_misspellings_path)
+  %li=link_to("Suggestions", admin_sayt_suggestions_path)
+  %li=link_to("Routed Queries", admin_routed_queries_path)
+
+%h2 Spelling Suggestions
+%ul
+  %li=link_to("Blocked Query Terms", admin_suggestion_blocks_path)
+
+%h2 GovBoxes
+%ul
+  %li=link_to("Agencies", admin_agencies_path)
+  %li=link_to("Agency Organization Codes", admin_agency_organization_codes_path)
+  %li=link_to('Federal Register Agencies', admin_federal_register_agencies_path)
+  %li=link_to('Federal Register Documents', admin_federal_register_documents_path)
+
+%h2 Naming Conventions, Languages, Links & Hints
+%ul
+  %li=link_to("Features", admin_features_path)
+  %li=link_to("Modules", admin_search_modules_path)
+  %li=link_to("Help Links", admin_help_links_path)
+  %li=link_to("Hints", admin_hints_path)
+  %li=link_to("Languages", admin_languages_path)
+
+%h2 Analytics
+%ul
+  %li=link_to("Trending URLs", admin_trending_urls_path)
+  %li=link_to("Search Module CTRs", admin_search_module_ctrs_path)
+
+%h2 Customer Content
+%ul
+  %li=link_to("RSS News Items", admin_news_items_path)
+  %li=link_to("Best Bets: Text", admin_affiliate_boosted_contents_path)
+  %li=link_to("Collections", admin_document_collections_path)
+  %li=link_to("Customer Scopes", admin_affiliate_scopes_path)
+  %li=link_to("Customer Catalog Prefix Whitelist", admin_catalog_prefixes_path)
+  %li=link_to("Site RSS Feed Quotas", admin_site_feed_urls_path)
+  %li=link_to("I14y Drawers", admin_i14y_drawers_path)
+  %li=link_to("Analytics Alerts", admin_watchers_path)
+
+%h2 URL Management
+%ul
+  %li=link_to("Superfresh Urls", admin_superfresh_urls_path)
+  %li=link_to("Superfresh Bulk Upload", admin_superfresh_urls_bulk_upload_index_path)
+  %li=link_to("Bulk Search.gov URL Upload", admin_bulk_url_upload_index_path)

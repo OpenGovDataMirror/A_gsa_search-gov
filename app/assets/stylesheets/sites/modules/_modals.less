@@ -1,0 +1,36 @@
+.modal-wider {
+  margin-left: -35%;
+  width: 70%;
+}
+
+.modal-full {
+  .border-radius(0);
+  border: 0;
+  height: auto;
+  max-height: none;
+  margin-left: 0;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: (@zindexModalBackdrop - 5);
+
+  &.fade.in {
+    top: 0;
+  }
+
+  .modal-body {
+    max-height: none;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.modal-page-viewer {
+  h1 {
+    line-height: (@baseLineHeight * 1.7);
+    padding-left: 8px;
+
+    span {
+      font-weight: normal;
+    }
+  }
+}

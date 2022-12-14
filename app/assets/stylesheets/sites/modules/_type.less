@@ -1,0 +1,61 @@
+h1 { font-size: @baseFontSize * 1.75; }
+h2 { font-size: @baseFontSize * 1.5; }
+h3 { font-size: @baseFontSize * 1.25; }
+
+.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+.inline {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    .ie7-inline-block();
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.draggable {
+  cursor: move;
+}
+
+span.properties {
+  .muted();
+}
+
+.actions {
+  > ul {
+    .inline();
+    .pull-right();
+    .unstyled();
+    display: block;
+    margin-bottom: 0;
+
+    > li {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    form {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.primary-content {
+  dl {
+    margin-bottom: 10px;
+    padding-left: 8px;
+  };
+  dd {
+    margin-left: 0;
+  }
+}

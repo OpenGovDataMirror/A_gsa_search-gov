@@ -1,0 +1,192 @@
+DEFAULTS: &DEFAULTS
+  email: $LABEL@fixtures.org
+  organization_name: Agency
+  persistence_token: $LABEL_persistence_token
+  approval_status: approved
+  first_name: Jane
+  last_name: Doe
+
+affiliate_admin:
+  <<: *DEFAULTS
+  is_affiliate_admin: true
+  is_affiliate: false
+  first_name: Affiliate Administrator
+  last_name: Smith
+  welcome_email_sent: true
+
+affiliate_added_by_another_affiliate:
+  <<: *DEFAULTS
+  first_name: Invited Affiliate Manager
+  last_name: Smith
+  requires_manual_approval: false
+
+non_affiliate_admin:
+  <<: *DEFAULTS
+  is_affiliate: false
+  first_name: Not An Affiliate
+  last_name: Smith
+  welcome_email_sent: true
+
+affiliate_manager:
+  <<: *DEFAULTS
+  first_name: Affiliate Manager
+  last_name: Smith
+  welcome_email_sent: true
+
+another_affiliate_manager:
+  <<: *DEFAULTS
+  first_name: Another Manager
+  last_name: Smith
+  welcome_email_sent: true
+
+affiliate_manager_with_no_affiliates:
+  <<: *DEFAULTS
+  first_name: A New Manager
+  last_name: Smith
+  welcome_email_sent: true
+
+affiliate_manager_with_one_site:
+  <<: *DEFAULTS
+  first_name: A New Manager with one site
+  last_name: Smith
+  welcome_email_sent: true
+
+affiliate_without_contact_info:
+  <<: *DEFAULTS
+  first_name: A New Affiliate
+  last_name: Smith
+  welcome_email_sent: true
+
+affiliate_manager_with_a_default_site:
+  <<: *DEFAULTS
+  first_name: Has A Default Site
+  last_name: Smith
+  welcome_email_sent: true
+  default_affiliate: :affiliate_for_user_with_default_site
+
+marilyn:
+  <<: *DEFAULTS
+  is_affiliate_admin: true
+  first_name: Analyst With Full Privileges
+  last_name: Smith
+  welcome_email_sent: true
+
+developer:
+  <<: *DEFAULTS
+  is_affiliate: false
+  first_name: A New Developer
+  last_name: Smith
+  welcome_email_sent: true
+
+active_user:
+  <<: *DEFAULTS
+  current_login_at: <%= 1.day.ago.to_s(:db) %>
+
+omniauth_user:
+  <<: *DEFAULTS
+  email: test@gsa.gov
+  uid: 12345
+
+user_with_uid:
+  <<: *DEFAULTS
+  uid: 11111
+
+user_without_uid:
+  <<: *DEFAULTS
+  uid: ~
+
+never_active_user:
+  <<: *DEFAULTS
+  created_at: <%= 100.days.ago.to_s(:db) %>
+
+not_active_user:
+  <<: *DEFAULTS
+  current_login_at: <%= 100.days.ago.to_s(:db) %>
+
+new_non_active_user:
+  <<: *DEFAULTS
+  created_at: <%= 3.days.ago.to_s(:db) %>
+
+not_active_76_days:
+  <<: *DEFAULTS
+  current_login_at: <%= 76.days.ago.to_s(:db) %>
+
+not_active_unapproved_76_days:
+  <<: *DEFAULTS
+  current_login_at: <%= 76.days.ago.to_s(:db) %>
+  approval_status: not_approved
+
+never_active_76_days:
+  <<: *DEFAULTS
+  created_at: <%= 76.days.ago.to_s(:db) %>
+
+affiliate_manager_with_pending_contact_information_status:
+  <<: *DEFAULTS
+  first_name: Pending Contact Information Affiliate Manager
+  last_name: Smith
+  approval_status: pending_contact_information
+  requires_manual_approval: true
+
+affiliate_manager_with_pending_approval_status:
+  <<: *DEFAULTS
+  first_name: Pending Approval Affiliate Manager
+  last_name: Smith
+  approval_status: pending_approval
+  requires_manual_approval: true
+
+affiliate_manager_requires_manual_approval:
+  <<: *DEFAULTS
+  first_name: Requires Manual Approval Affiliate Manager
+  last_name: Smith
+  approval_status: pending_approval
+  requires_manual_approval: true
+
+affiliate_manager_with_not_approved_status:
+  <<: *DEFAULTS
+  first_name: Not Approved Affiliate Manager
+  last_name: Smith
+  approval_status: not_approved
+  requires_manual_approval: true
+
+affiliate_requiring_manual_approval:
+  <<: *DEFAULTS
+  email: affiliate_requiring_manual_approval@email.gov
+  requires_manual_approval: true
+  approval_status: pending_approval
+
+no_first_name:
+  <<: *DEFAULTS
+  email: no_first_name@email.gov
+  first_name: ''
+  last_name: 'Smith'
+  organization_name: Agency
+
+no_last_name:
+  <<: *DEFAULTS
+  email: no_last_name@email.gov
+  first_name: 'Bob'
+  last_name: ''
+  organization_name: Agency
+
+no_organization_name:
+  <<: *DEFAULTS
+  email: no_organization_name@email.gov
+  first_name: Jane
+  last_name: Doe
+  organization_name: ''
+
+no_first_last_name_1:
+  <<: *DEFAULTS
+  email: no_first_last_name_1@email.gov
+
+no_first_last_name_2:
+  <<: *DEFAULTS
+  email: no_first_last_name_2@email.gov
+
+no_first_last_name_3:
+  <<: *DEFAULTS
+  email: no_first_last_name_3@email.gov
+
+no_first_last_name_4:
+  <<: *DEFAULTS
+  email: no_first_last_name_4@email.gov

@@ -1,0 +1,253 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bingapis.com/api/v6/search?AppId=<BING_V6_APP_ID>&count=20&mkt=en-US&offset=0&q=english%20(site:gov%20OR%20site:mil)&responseFilter=WebPages&safeSearch=moderate&textDecorations=false&traffictype=test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - USASearch
+      Ocp-Apim-Subscription-Key:
+      - my_api_key
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '5007'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Tue, 31 Aug 2021 20:29:46 GMT
+      Vary:
+      - Accept-Encoding
+      P3p:
+      - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+      Set-Cookie:
+      - MUID=000221E0859D6A64015E314484606B67; domain=.bingapis.com; expires=Sun,
+        25-Sep-2022 20:30:46 GMT; path=/; secure; SameSite=None
+      - MUIDB=000221E0859D6A64015E314484606B67; expires=Sun, 25-Sep-2022 20:30:46
+        GMT; path=/; HttpOnly
+      - SRCHD=AF=NOFORM; domain=.bingapis.com; expires=Thu, 31-Aug-2023 20:30:46 GMT;
+        path=/
+      - SRCHHPGUSR=SRCHLANG=en; domain=.bingapis.com; expires=Thu, 31-Aug-2023 20:30:46
+        GMT; path=/
+      - SRCHUID=V=2&GUID=EEF5102262A14CAA8758915A2BF8BEB1&dmnchg=1; domain=.bingapis.com;
+        expires=Thu, 31-Aug-2023 20:30:46 GMT; path=/
+      - SRCHUSR=DOB=20210831; domain=.bingapis.com; expires=Thu, 31-Aug-2023 20:30:46
+        GMT; path=/
+      - _EDGE_S=F=1&SID=001E399AC47166C101E9293EC58C6739&mkt=en-us; domain=.bingapis.com;
+        path=/; HttpOnly
+      - _EDGE_V=1; domain=.bingapis.com; expires=Sun, 25-Sep-2022 20:30:46 GMT; path=/;
+        HttpOnly
+      - _SS=SID=001E399AC47166C101E9293EC58C6739; domain=.bingapis.com; path=/
+      X-Snr-Routing:
+      - '1'
+      Bingapis-Traceid:
+      - C01B46FCB830440A8CEA369A41FA5E8A
+      X-Msedge-Clientid:
+      - 000221E0859D6A64015E314484606B67
+      X-Msapi-Userstate:
+      - e985
+      Bingapis-Market:
+      - en-US
+      X-Cache:
+      - CONFIG_NOCACHE
+      X-Msedge-Ref:
+      - 'Ref A: C01B46FCB830440A8CEA369A41FA5E8A Ref B: BLUEDGE0312 Ref C: 2021-08-31T20:30:46Z'
+      Date:
+      - Tue, 31 Aug 2021 20:30:46 GMT
+    body:
+      encoding: UTF-8
+      string: '{"_type": "SearchResponse", "instrumentation": {"pingUrlBase": "https:\/\/www.bingapis.com\/api\/ping?IG=952EDAB63D1D4618A5DD1D848C4B6A18&CID=000221E0859D6A64015E314484606B67&ID=",
+        "pageLoadPingUrl": "https:\/\/www.bingapis.com\/api\/ping\/pageload?IG=952EDAB63D1D4618A5DD1D848C4B6A18&CID=000221E0859D6A64015E314484606B67&Type=Event.CPT&DATA=0"},
+        "webPages": {"webSearchUrl": "https:\/\/www.bing.com\/search?q=english+(site%3agov+OR+site%3amil)",
+        "webSearchUrlPingSuffix": "DevEx,5398.1", "totalEstimatedMatches": 13800000,
+        "value": [{"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.0", "name":
+        "English Language Training | Study in the States", "url": "https:\/\/studyinthestates.dhs.gov\/students\/get-started\/english-language-training",
+        "urlPingSuffix": "DevEx,5062.1", "displayUrl": "https:\/\/studyinthestates.dhs.gov\/students\/get-started\/english-language-training",
+        "snippet": "A “stand-alone” English language training program is an SEVP-certified
+        institution whose officials have indicated on the school''s Form I-17, “Petition
+        for Approval of School for Attendance by Nonimmigrant Student,” that the school
+        offers only English language training programs of study.", "dateLastCrawled":
+        "2021-08-25T04:29:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.1",
+        "name": "Field of degree: English : Occupational Outlook Handbook ...", "url":
+        "https:\/\/www.bls.gov\/ooh\/field-of-degree\/english\/english-field-of-degree.htm",
+        "urlPingSuffix": "DevEx,5076.1", "displayUrl": "https:\/\/www.bls.gov\/ooh\/field-of-degree\/english\/english-field-of-degree.htm",
+        "snippet": "Table 2. Top-employing occupations for workers with an English
+        degree. Occupational Outlook Handbook profile. Percent growth, projected 2019–29.
+        Typical entry-level education. Percent degree holders in this field, this
+        occupation, 2018. Percent of this occupation with an advanced degree, 2018.
+        Health specialties teachers, postsecondary. 21%.", "dateLastCrawled": "2021-08-28T18:11:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.2", "name": "LANGUAGE
+        AND READING INTERVENTIONS FOR ENGLISH LANGUAGE ...", "url": "https:\/\/files.eric.ed.gov\/fulltext\/ED521569.pdf",
+        "urlPingSuffix": "DevEx,5088.1", "displayUrl": "https:\/\/files.eric.ed.gov\/fulltext\/ED521569.pdf",
+        "snippet": "English language proficiency assessments, for example, suggests
+        that the length of time a student has lived in the U.S. is a better predictor
+        of his or her growth on language proficiency assessments than are scores on
+        mathematics or English language arts assessments.", "dateLastCrawled": "2021-08-27T18:17:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.3", "name": "Anxiety
+        in English Language Learning: A Case Study of ...", "url": "https:\/\/files.eric.ed.gov\/fulltext\/EJ1144344.pdf",
+        "urlPingSuffix": "DevEx,5099.1", "displayUrl": "https:\/\/files.eric.ed.gov\/fulltext\/EJ1144344.pdf",
+        "snippet": "English language reading anxiety is the fear experienced by students
+        when reading English text. Reading anxiety has an effect on students’ academic
+        performance. Reading anxiety is basically rooted in some type of fear such
+        as fear of failure and lack of self confidence. Recent studies confirmed a
+        negative correlation between language", "dateLastCrawled": "2021-08-26T23:14:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.4", "name": "VDOE ::
+        English Standards of Learning Resources", "url": "https:\/\/www.doe.virginia.gov\/testing\/sol\/standards_docs\/english\/index.shtml",
+        "urlPingSuffix": "DevEx,5111.1", "displayUrl": "https:\/\/www.doe.virginia.gov\/testing\/sol\/standards_docs\/english\/index.shtml",
+        "snippet": "News & Announcements Registration Now Open for the 2021 K-12 SOL
+        Conferences in English Language Arts. 2021 K-12 SOL Conferences in English
+        Language Arts will utilize a train-the-trainer model to provide professional
+        development that focuses on continued implementation of engaging instruction
+        that aligns to the 2017 Standards of Learning and Curriculum Framework.",
+        "dateLastCrawled": "2021-08-27T01:20:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.5",
+        "name": "What do I need to know about... English-Only Rules | U.S ...", "url":
+        "https:\/\/www.dol.gov\/agencies\/oasam\/centers-offices\/civil-rights-center\/internal\/policies\/english-only-rules",
+        "urlPingSuffix": "DevEx,5124.1", "displayUrl": "https:\/\/www.dol.gov\/...\/civil-rights-center\/internal\/policies\/english-only-rules",
+        "snippet": "A workplace English-only rule that is applied only at certain
+        times may be adopted only under very limited circumstances that are justified
+        by business necessity. 29 C.F.R. § 1606.7(b) Such a rule must be narrowly
+        tailored to address the business necessity. Situations in which business necessity
+        would justify an English-only rule include: For communications with customers,
+        coworkers, or ...", "dateLastCrawled": "2021-08-28T08:03:00.0000000Z"}, {"id":
+        "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.6", "name": "ENGLISH LEARNER
+        AUTHORIZATION\/CLAD CERTIFICATE", "url": "https:\/\/www.ctc.ca.gov\/docs\/default-source\/leaflets\/cl628c.pdf?sfvrsn=2ac01781_8",
+        "urlPingSuffix": "DevEx,5136.1", "displayUrl": "https:\/\/www.ctc.ca.gov\/docs\/default-source\/leaflets\/cl628c.pdf?sfvrsn=2ac01781_8",
+        "snippet": "English as a Second Language (ESL) or Teaching English to Speakers
+        of Other Languages (TESOL). Specially Designed Academic Instruction Delivered
+        in English (SDAIE) is an instructional approach designed to increase the level
+        of comprehensibility of the English language in the content area of the class.
+        The specially", "dateLastCrawled": "2021-08-28T05:13:00.0000000Z"}, {"id":
+        "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.7", "name": "Newspaper, Available
+        Online, PDF, English | Library of ...", "url": "https:\/\/www.loc.gov\/newspapers\/?fa=online-format:pdf%7Clanguage:english",
+        "urlPingSuffix": "DevEx,5148.1", "displayUrl": "https:\/\/www.loc.gov\/newspapers\/?fa=online-format:pdf|language:english",
+        "snippet": "Chronicling America 263,200 Japanese-American Internment Camp
+        Newspapers, 1942 to 1946 4,258 New York Journal and Related Titles, 1896 to
+        1899 1,507", "dateLastCrawled": "2021-08-27T15:39:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.8",
+        "name": "DES: Work Search Record - English", "url": "https:\/\/des.nc.gov\/documents\/LEP\/English\/work-search-record---english",
+        "urlPingSuffix": "DevEx,5161.1", "displayUrl": "https:\/\/des.nc.gov\/documents\/LEP\/English\/work-search-record---english",
+        "snippet": "DES Central Office Location: 700 Wade Avenue Raleigh, NC 27605
+        Please note that this is a secure facility. Customers needing assistance with
+        their unemployment insurance claim should contact us via phone or email only.",
+        "dateLastCrawled": "2021-08-27T06:04:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.9",
+        "name": "English-Spanish Glossary for Educational Settings ...", "url": "https:\/\/www.cde.ca.gov\/sp\/el\/er\/engspanglossary.asp",
+        "urlPingSuffix": "DevEx,5175.1", "displayUrl": "https:\/\/www.cde.ca.gov\/sp\/el\/er\/engspanglossary.asp",
+        "snippet": "English-Spanish Glossary for Educational Settings (DOCX). The
+        English-Spanish Glossary for Educational Settings was developed by the California
+        Department of Education (CDE) to encourage more consistent use of words and
+        terminology that are commonly found in state and federal communication documents
+        about assessment, education, and accountability. Its purpose has been, and
+        continues to be, to ...", "dateLastCrawled": "2021-08-25T06:19:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.10", "name": "Home
+        - English", "url": "https:\/\/register.covidconnect.wi.gov\/", "urlPingSuffix":
+        "DevEx,5187.1", "displayUrl": "https:\/\/register.covidconnect.wi.gov", "snippet":
+        "English; Sign in TAKE THE SCREENING QUESTIONNAIRE. This questionnaire is
+        designed to gather information regarding the COVID-19 pandemic currently affecting
+        our country and offer guidance and instruction to ensure your safety. Additional
+        Websites. CDC; US State Department COVID-19 Portal ...", "dateLastCrawled":
+        "2021-08-28T00:06:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.11",
+        "name": "English Language Arts - Tennessee", "url": "https:\/\/www.tn.gov\/education\/instruction\/academic-standards\/english-language-arts-standards.html",
+        "urlPingSuffix": "DevEx,5199.1", "displayUrl": "https:\/\/www.tn.gov\/education\/instruction\/academic-standards\/english-language-arts...",
+        "snippet": "English Language Arts. The State Board of Education has the authority
+        to adopt academic standards for each subject area in grades K-12. The ELA
+        standards are designed to prepare students with the most important knowledge
+        and 21st century literacy skills necessary to succeed in post-secondary and
+        workforce arenas.", "dateLastCrawled": "2021-08-27T02:20:00.0000000Z"}, {"id":
+        "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.12", "name": "VDOE :: English
+        and Reading", "url": "https:\/\/doe.virginia.gov\/instruction\/english\/index.shtml",
+        "urlPingSuffix": "DevEx,5212.1", "displayUrl": "https:\/\/doe.virginia.gov\/instruction\/english\/index.shtml",
+        "snippet": "Registration Now Open for the August 2021 K-12 SOL Conferences
+        in English Language Arts. 2021 K-12 SOL Conferences in English Language Arts
+        will utilize a train-the-trainer model to provide professional development
+        that focuses on continued implementation of engaging instruction that aligns
+        to the 2017 Standards of Learning and Curriculum Framework.", "dateLastCrawled":
+        "2021-08-28T15:32:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.13",
+        "name": "NOTICE AND AGREEMENT FOR CHILD, SPOUSAL AND MEDICAL SUPPORT", "url":
+        "https:\/\/www.cdss.ca.gov\/cdssweb\/entres\/forms\/english\/cw2.1na.pdf",
+        "urlPingSuffix": "DevEx,5224.1", "displayUrl": "https:\/\/www.cdss.ca.gov\/cdssweb\/entres\/forms\/english\/cw2.1na.pdf",
+        "snippet": "YOUR RIGHT TO CLAIM GOOD CAUSE. Reasons for Claiming Good Cause:
+        • Cooperation would increase the risk of physical, sexual, or emotional harm
+        to the child(ren).", "dateLastCrawled": "2021-08-28T08:03:00.0000000Z"}, {"id":
+        "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.14", "name": "Pfizer-BioNTech
+        COVID-19 Vaccine EUA Fact Sheet for ...", "url": "https:\/\/www.fda.gov\/media\/144414\/download",
+        "urlPingSuffix": "DevEx,5235.1", "displayUrl": "https:\/\/www.fda.gov\/media\/144414\/download",
+        "snippet": "1 revised: 12 august 2021 . fact sheet for recipients and caregivers
+        . emergency use authorization (eua) of . the pfizer-biontech covid-19 vaccine
+        to prevent coronavirus", "dateLastCrawled": "2021-08-22T08:31:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.15", "name": "English
+        | SBE", "url": "https:\/\/sbe.wa.gov\/faqs\/english", "urlPingSuffix": "DevEx,5247.1",
+        "displayUrl": "https:\/\/sbe.wa.gov\/faqs\/english", "snippet": "English.
+        1. What is the State Board of Education''s (SBE) role in graduation requirements?
+        RCW 28A.230.090 authorizes SBE to establish state graduation requirements.
+        SBE has set credit requirements, including credit requirements in English.
+        In addition, SBE has established the non-credit requirement of a High School
+        and Beyond Plan ( WAC 180-51 ...", "dateLastCrawled": "2021-08-25T22:32:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.16", "name": "Our Nation''s
+        English Learners - ed", "url": "https:\/\/www2.ed.gov\/datastory\/el-characteristics\/index.html",
+        "urlPingSuffix": "DevEx,5260.1", "displayUrl": "https:\/\/www2.ed.gov\/datastory\/el-characteristics\/index.html",
+        "snippet": "Introduction. English learners (ELs) are a growing part of the
+        K–12 student population. Between the 2009–10 and 2014–15 school years, the
+        percentage of EL students increased in more than half of the states, with
+        increases of over 40 percent in five states. 1 Under the Every Student Succeeds
+        Act, states must annually assess the English language proficiency of ELs,
+        provide reasonable ...", "dateLastCrawled": "2021-08-27T11:18:00.0000000Z"},
+        {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.17", "name": "Ohio
+        English Language Proficiency Screener (OELPS) | Ohio ...", "url": "http:\/\/education.ohio.gov\/Topics\/Testing\/Ohio-English-Language-Proficiency-Screener-OELPS",
+        "urlPingSuffix": "DevEx,5274.1", "displayUrl": "education.ohio.gov\/Topics\/Testing\/Ohio-English-Language-Proficiency-Screener-OELPS",
+        "snippet": "Ohio English Language Proficiency Screener (OELPS) The Ohio English
+        Language Proficiency Screener (OELPS) is aligned to the K-12 English Language
+        Proficiency Standards and is designed to identify Ohio students in grades
+        K-12 as English learners. The OELPS is the second step in the standardized
+        identification process; the first step is the Language Usage Survey.", "dateLastCrawled":
+        "2021-08-26T23:17:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.18",
+        "name": "New York State Absentee Ballot Application", "url": "https:\/\/www.elections.ny.gov\/NYSBOE\/download\/voting\/AbsenteeBallot-English.pdf",
+        "urlPingSuffix": "DevEx,5286.1", "displayUrl": "https:\/\/www.elections.ny.gov\/NYSBOE\/download\/voting\/AbsenteeBallot-English.pdf",
+        "snippet": "Instructions: Who may apply for an absentee ballot? Each person
+        must apply for themselves\/ It is a felony to make a false statement in an
+        application", "dateLastCrawled": "2021-08-27T22:19:00.0000000Z"}, {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.19",
+        "name": "Form 6059B Customs Declaration - English (Fillable) | U.S ...", "url":
+        "https:\/\/www.cbp.gov\/document\/forms\/form-6059b-customs-declaration-english-fillable",
+        "urlPingSuffix": "DevEx,5299.1", "displayUrl": "https:\/\/www.cbp.gov\/document\/forms\/form-6059b-customs-declaration-english-fillable",
+        "snippet": "Form 6059B Customs Declaration in English and Fillable. This form
+        can be now be filled out prior to or during your travel and be filled out
+        by typing (instead of hand written) and then printed and taken with you as
+        your official Customs Declaration.", "dateLastCrawled": "2021-08-28T00:26:00.0000000Z"}]},
+        "rankingResponse": {"mainline": {"items": [{"answerType": "WebPages", "resultIndex":
+        0, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.0"}}, {"answerType":
+        "WebPages", "resultIndex": 1, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.1"}},
+        {"answerType": "WebPages", "resultIndex": 2, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.2"}},
+        {"answerType": "WebPages", "resultIndex": 3, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.3"}},
+        {"answerType": "WebPages", "resultIndex": 4, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.4"}},
+        {"answerType": "WebPages", "resultIndex": 5, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.5"}},
+        {"answerType": "WebPages", "resultIndex": 6, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.6"}},
+        {"answerType": "WebPages", "resultIndex": 7, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.7"}},
+        {"answerType": "WebPages", "resultIndex": 8, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.8"}},
+        {"answerType": "WebPages", "resultIndex": 9, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.9"}},
+        {"answerType": "WebPages", "resultIndex": 10, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.10"}},
+        {"answerType": "WebPages", "resultIndex": 11, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.11"}},
+        {"answerType": "WebPages", "resultIndex": 12, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.12"}},
+        {"answerType": "WebPages", "resultIndex": 13, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.13"}},
+        {"answerType": "WebPages", "resultIndex": 14, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.14"}},
+        {"answerType": "WebPages", "resultIndex": 15, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.15"}},
+        {"answerType": "WebPages", "resultIndex": 16, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.16"}},
+        {"answerType": "WebPages", "resultIndex": 17, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.17"}},
+        {"answerType": "WebPages", "resultIndex": 18, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.18"}},
+        {"answerType": "WebPages", "resultIndex": 19, "value": {"id": "https:\/\/www.bingapis.com\/api\/v6\/#WebPages.19"}}]}}}'
+    http_version:
+  recorded_at: Tue, 31 Aug 2021 20:30:46 GMT
+recorded_with: VCR 4.0.0

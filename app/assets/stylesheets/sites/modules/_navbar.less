@@ -1,0 +1,19 @@
+.navbar {
+  .navbar-fixed-top;
+  .navbar-inverse;
+
+  .navbar-inner {
+    .navbar-fixed-top > .navbar-inner;
+    .box-shadow(none);
+    border-width: 0;
+    padding-right: @navbarPaddingWidth;
+    padding-left: @navbarPaddingWidth;
+  }
+}
+
+.navbar .nav .active {
+  > a, > a:hover, > a:focus {
+    .box-shadow(none);
+    background-color: inherit;
+  }
+}

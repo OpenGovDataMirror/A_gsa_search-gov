@@ -1,0 +1,828 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://data.usajobs.gov/api/search?Keyword=Nursing&LocationName=Baltimore,%20MD,%20USA&Organization=HE38&Radius=75&ResultsPerPage=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization-Key:
+      - "<JOBS_AUTHORIZATION_KEY>"
+      User-Agent:
+      - "<JOBS_USER_AGENT>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hr+json; charset=utf-8
+      Server:
+      - Microsoft-IIS/10.0
+      X-Powered-By:
+      - ASP.NET
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 31 Aug 2021 20:32:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - akavpau_DATA_USAJ=1630442236~id=6f8f27e1660b2ecb236519efe2665f1a; Domain=data.usajobs.gov;
+        Path=/; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"LanguageCode":"EN","SearchParameters":{},"SearchResult":{"SearchResultCount":3,"SearchResultCountAll":3,"SearchResultItems":[{"MatchedObjectId":"599253800","MatchedObjectDescriptor":{"PositionID":"NIH-CC-DH-21-11086960","PositionTitle":"Nurse
+        (Clinical Research)","PositionURI":"https://www.usajobs.gov:443/GetJob/ViewDetails/599253800","ApplyURI":["https://www.usajobs.gov:443/GetJob/ViewDetails/599253800?PostingChannelID="],"PositionLocationDisplay":"Montgomery
+        County, Maryland","PositionLocation":[{"LocationName":"Montgomery County,
+        Maryland","CountryCode":"United States","CountrySubDivisionCode":"Maryland","CityName":"Montgomery
+        County, Maryland","Longitude":-77.20451,"Latitude":39.1366}],"OrganizationName":"National
+        Institutes of Health","DepartmentName":"Department of Health And Human Services","SubAgency":"Clinical
+        Center, Nursing Department","JobCategory":[{"Name":"Nurse","Code":"0610"}],"JobGrade":[{"Code":"GS"}],"PositionSchedule":[{"Name":"Multiple
+        Schedules","Code":"6"}],"PositionOfferingType":[{"Name":"Permanent","Code":"15317"}],"QualificationSummary":"In
+        order to meet the Basic Qualification Requirements for a Nurse (Clinical Research),
+        GS-0610, you must: A. Have a graduate or higher level degree, bachelor''s
+        degree, associate degree, or diploma from an accredited professional nursing
+        educational program. (This education must have been accredited by the Commission
+        on Collegiate Nursing Education, Council on Accreditation of Nurse Anesthesia
+        Educational Programs, Accreditation Commission for Midwifery Education, or
+        an accrediting body recognized by the U.S. Department of Education at the
+        time the degree was obtained.) Note: Official certification from the Commission
+        on Graduates of Foreign Nursing Schools is required for individuals who graduated
+        from foreign nursing schools; AND B. Have passed the National Council Licensure
+        Examination for Registered Nurses (NCLEX-RN) or you obtained licensure before
+        the implementation of the NCLEX-RN. Individuals who have not passed the NCLEX-RN,
+        but meet all other qualification requirements will be subject to a comprehensive
+        evaluation of both their education and experience prior to final appointment.
+        AND C. Possess a current, active, full and unrestricted license, or registration
+        as a professional nurse from a state, the District of Columbia, the Commonwealth
+        of Puerto Rico, or a territory of the United States. In addition, in order
+        to qualify for a Clinical Nurse position at the GS-11 level, you must: A.
+        Have completed a Ph.D., or equivalent doctoral degree, from a professional
+        nursing educational program or related medical science field; OR B. Have at
+        least 1 year of professional nursing experience equivalent to at least the
+        GS-09 level in the federal service obtained in either the private or public
+        sector, performing the following types of tasks: providing comprehensive nursing
+        care to patients based on the physician''s medical care plan and the physical,
+        mental and emotional needs of the patient; administering oxygen, IV fluid,
+        blood transfusions and prescribed oral, subcutaneous and intramuscular medications;
+        managing nasal-pharyngeal and gastric suction as well as a variety of other
+        drainage tubes; preparing patients for surgical and/or diagnostic procedures;
+        setting-up, operating and monitoring specialized equipment such as cardiac
+        monitors, respirators, defibrillators, etc.; providing care in a variety of
+        clinical settings, such as Inpatient Patient Care Units (e.g. oncology, pediatric,
+        neurology, behavioral health), ICU, Operating Room, PACU, Donor Services,
+        Infusion Centers and Ambulatory Clinics AND possession of a diploma, associate
+        degree, bachelor''s degree, or master''s degree from a professional nursing
+        educational program.\nDo not copy and paste the duties, specialized experience,
+        or occupational assessment questionnaire from this announcement into your
+        resume as that will not be considered a demonstration of your qualifications
+        for this position. Experience refers to paid and unpaid experience, including
+        volunteer work done through National Service programs (e.g., Peace Corps,
+        AmeriCorps) and other organizations (e.g., professional; philanthropic; religious;
+        spiritual; community, student, social). Volunteer work helps build critical
+        competencies, knowledge, and skills and can provide valuable training and
+        experience that translates directly to paid employment. You will receive credit
+        for all qualifying experience, including volunteer experience. Preview assessment
+        questionnaire before you apply: https://apply.usastaffing.gov/ViewQuestionnaire/11086960
+        The Ideal Candidate will have recent acute care (hospital) experience in their
+        specialty area (i.e. Pediatrics, ICU, Perioperative, Ambulatory, Medical Surgical,
+        etc.). This announcement covers multiple areas within the NIH Clinical Center
+        Nursing Department: Inpatient Units: Rotating shifts (may include weekends,
+        holidays, evening and nights)\nICU\nPediatrics\nOncology Surgical, Medical
+        and Transplant\nMedical Surgical\nAdult Behavioral Health\nAlcohol and Addictions\nNeurology\nPediatric
+        Behavioral Health\nSpecial Clinical Studies Unit Outpatient Clinics: Primarily
+        Monday-Friday 7-4:30 with occasional extended hours\nHematology and Oncology\nPediatrics\nBehavioral
+        Health\nInfectious Disease\nRadiation Oncology\nCardiology\nOphthalmology\nMedical
+        Surgical Specialties\nNeurology\nENT Specialty Areas: (May include weekends
+        and on-call)\nOR\nPACU\nInterventional Radiology\nDental Clinic\nProcedure
+        Services, Endoscopy\nDialysis\nDay Hospital/Infusion Centers (Oncology, Pediatrics,
+        Medical Surgical)\nCare Coordination and Case Management","PositionRemuneration":[{"MinimumRange":"82616.0","MaximumRange":"104927.0","RateIntervalCode":"Per
+        Year"}],"PositionStartDate":"2021-04-26","PositionEndDate":"2022-01-14","PublicationStartDate":"2021-04-26","ApplicationCloseDate":"2022-01-14","PositionFormattedDescription":[{"Label":"Dynamic
+        Teaser","LabelDescription":"Hit highlighting for keyword searches."}],"UserArea":{"Details":{"JobSummary":"Clinical
+        Research Nurse positions are available in the following specialty areas: Oncology
+        and Critical Care Neuroscience, Behavioral Health and Pediatrics Medical Surgical
+        Specialties Perioperative Nursing For specific unit descriptions please follow
+        the link below:\nhttp://www.cc.nih.gov/nursing/about/patient_care_areas.html
+        See \"Next Steps\" section for detailed information on the application process.","WhoMayApply":{"Name":"","Code":""},"LowGrade":"11","HighGrade":"11","SubAgencyName":"Clinical
+        Center, Nursing Department","OrganizationCodes":"HE/HE38","Relocation":"False","HiringPath":["public"],"AgencyMarketingStatement":"The
+        National Institutes of Health (NIH) is the premier biomedical research center
+        for the world. Its 27 Institutes and Centers employ approximately 18,000 employees
+        doing a vast array of jobs, all supporting efforts for a healthy nation. For
+        information on the NIH mission, goals, and Institutes and Centers, visit NIH
+        Overview. The National Institutes of Health (NIH), Clinical Center (CC), is
+        the 200-bed research hospital and ambulatory care research facility in Bethesda,
+        Maryland that supports the Intramural Research Program (IRP) of the National
+        Institutes of Health. It is the largest inpatient facility in the country
+        devoted exclusively to clinical research, and provides a full range of services
+        from ambulatory care to critical care and special procedures. The focus at
+        the CC on early phase and first-in-human clinical trials and on the study
+        of rare diseases makes it possible to rapidly translate scientific observations
+        and laboratory discoveries into new approaches for diagnosing, treating, and
+        preventing disease. The NIH CC leads the nation in implementing a specialty
+        practice model for Clinical Research Nursing which defines the roles and contribution
+        of nurses providing care to research participants. If you want to play a significant
+        role supporting the vision at the CC in leading the Nation in implementing
+        a specialty practice model for Clinical Research Nursing, then consider joining
+        our team! For more information, visit http://www.cc.nih.gov/.","TravelCode":"0","ApplyOnlineUrl":"https://apply.usastaffing.gov/Application/Apply","DetailStatusUrl":"https://apply.usastaffing.gov/Application/ApplicationStatus","MajorDuties":["If
+        selected for this position, your duties may include but are not limited to
+        the following: Clinical Practice: Exercises the full domain of practice for
+        the clinical research nurse specialty that includes providing clinical care
+        to research patients, supporting protocol implementation, data collection,
+        continuity of care, human subjects protection and dissemination of clinical
+        research findings. Utilizes advanced critical thinking and nursing skills
+        to assess, plan, perform and evaluate nursing care for individual patients,
+        patient''s families and significant others who are participants in biomedical
+        research protocols. Serves as a leader in an area of specialized clinical
+        practice and may take multiple roles in planning and providing care to individual
+        research participants or in coordinating and implementing clinical studies.
+        Masters and maintains competence in all relevant nursing skills and the use
+        of associated technology for a clinical program. Teaches these skills to less
+        experience nursing staff and other colleagues. Serves as unit or program preceptor
+        for new staff. Assists in assessing the competency of less experienced nurses.
+        Accurately and appropriately administers medications. Uses resources to validate
+        purpose, indication and intended outcome for medications, treatments and research
+        procedures. Develops plans to address comprehensive research participant needs
+        including education, safety, comfort and spirituality. Study Management: Provides
+        nursing support for research efforts through participation in clinical study
+        implementation. Manages clinical and research support activities in order
+        to assure patient safety, address clinical needs and assure protocol integrity
+        and accurate data collection. Supports biomedical research through detailed
+        observations, measurements, and data collection related to pertinent assessments
+        as defined by the protocol specifications and the incumbent''s clinical judgment.
+        Accurately documents observations, identifies trends and important findings,
+        and effectively communicates this information to the multidisciplinary research
+        team and nursing colleagues. Provides feedback to colleagues and investigators
+        on all issues affecting the quality of the research endeavor, assists less-experienced
+        nurses in learning the specifics of studies or protocols, evaluates patient
+        trends in outcomes and compliance, and contributes to the design of clinical
+        trials. Human Subjects Protection: Ensures that informed consent is obtained
+        prior to beginning any studies or therapies and that it is ongoing through
+        the patient''s participation in the research process. The incumbent anticipates
+        and identifies ethical conflicts and plans with the supervisor and multidisciplinary
+        research team to address them. Coordinates research activities to minimize
+        risk. Advocates for research participants and families and supports research
+        participant rights. Care Coordination and Continuity: Provides patient-focused
+        nursing leadership within the interdisciplinary team and collaborates with
+        team members to create and communicate a plan of care that balances clinical
+        care needs with research needs and allows for safe and effective collection
+        of clinical research data. Contributes to multidisciplinary conferences and
+        activities regarding research participant care and protocol implementation.
+        Contributing to the Science: Disseminates clinical expertise and best practices
+        related to clinical research through research team meetings, unit-based in-services,
+        presentations, posters, publications and/or interactions with nursing and
+        interdisciplinary colleagues. Generates practice questions as a result of
+        new protocol procedures or interventions. Identifies questions that may be
+        appropriate for clinical nursing research. Contributes as a research team
+        member to the development of new ideas for study, explorations of innovations
+        arising for clinical research findings to practice. Leadership: Independently
+        and effectively sets priorities and organizes complex assignments and unit
+        activities. The incumbent develops and provides leadership, facilitation,
+        and group management skills to team and identifies opportunities for collaborative
+        projects and practice. The incumbent performs delegated administrative and
+        committee work and identifies administrative issues among staff in the practice
+        area."],"Education":"This position has an education requirement. You are strongly
+        encouraged to submit a copy of your transcripts (or a list of your courses
+        including titles, credit hours completed and grades). Unofficial transcripts
+        will be accepted in the application package. Official transcripts will be
+        required from all selectees prior to receiving an official offer. Click here
+        for information on Foreign Education.","Requirements":"","Evaluations":"Additional
+        selections may be made for similar positions across the Department of Health
+        and Human Services (HHS) within the local commuting area(s) of the location
+        identified in this announcement. By applying, you agree to have your application
+        shared with interested selecting official(s) at HHS. Clearance of CTAP/ICTAP
+        will be applied for similar positions across HHS. The position(s) advertised
+        in this announcement are covered by a direct hire authority. Traditional rating
+        and ranking of applicants, including category rating, does not apply to this
+        vacancy. You will be initially evaluated against the basic qualifications
+        only. Qualified applicants will be referred for consideration in accordance
+        with the Office of Personnel Management direct hire guidelines. Veterans''
+        Preference does not apply to positions covered by a direct hire authority.
+        To determine your qualifications and referral status, we may review your resume
+        and supporting documentation and compare it against your responses to the
+        vacancy questionnaire. Ensure you support your self-ratings by the information
+        you provide in your application. We may verify or assess your qualifications
+        at any time. Inflated or unsupported qualifications may affect your rating.
+        Any misrepresentation or material omission of facts may be sufficient cause
+        to end further consideration of your candidacy. Persons listed as having knowledge
+        of your past accomplishments or experience in your application may be contacted
+        for verification purposes at any time. Verification may, but need not, begin
+        prior to receiving an offer. To be considered well qualified for the purposes
+        of the Career Transition Assistance Program (CTAP) and the Interagency Career
+        Transition Assistance Program (ICTAP), you must be able to satisfactorily
+        perform the duties of the position upon entry and substantively exceed the
+        basic qualifications and meet all eligibility, physical, medical, suitability,
+        and all other requirements.","HowToApply":"To apply for this position, please
+        read and follow all instructions in this announcement, complete the online
+        application, and submit the documentation specified in the \"Required Documents\"
+        section. Your complete application package must be submitted by 11:59 PM Eastern
+        Time (ET) on 01/14/2022 to receive consideration. To begin, click Apply to
+        access the online application. You will need to be logged into your USAJOBS
+        account to apply. Follow the prompts to select your resume and/or other supporting
+        documents to be included with your application package. See the \"Required
+        Documents\" section for any additional forms and/or supplemental materials
+        required. Read all Eligibility questions and respond accordingly to any Eligibility
+        you wish to claim. You will only be considered for those Eligibility questions
+        (Status Applicant, Reinstatement, Schedule A, etc.) you respond in the affirmative
+        to, regardless of what documentation you submit. We cannot assume you intended
+        to respond differently to a question based on other information in your application
+        package. Complete the assessment questionnaire. Applicants are asked all questions
+        regardless of their consideration preferences. We will only consider you for
+        the grades, series, locations, specialties, and other considerations that
+        you self-identify as being qualified for or interested in. Preview assessment
+        questionnaire before you apply: https://apply.usastaffing.gov/ViewQuestionnaire/11086960
+        Verify all required documentation is included in your application package,
+        review your responses to the assessment questionnaire for accuracy, and then
+        submit your application. In addition to the required documents, we encourage
+        you to submit a cover letter, copy of your transcripts, and any applicable
+        certifications or licenses. Even though this information is not required at
+        the time of application, we may request this information later. We cannot
+        assume responsibility or grant extensions for personal issues (e.g., troubles
+        navigating the application process, loss of internet, not understanding a
+        question) when applying to our announcements. For technical difficulties,
+        contact HR Systems Support between 8:00 AM and 4:30 PM ET Monday through Friday
+        at hrss@nih.gov. If you need any other accommodation or assistance with applying,
+        please contact Lashawn Bell at belllh@mail.nih.gov. Requests for reasonable
+        accommodations must be made before the announcement closing date. NIH''s EEO
+        and Diversity and Inclusion Policy Statement Visit the NIH''s Office of Equity,
+        Diversity, and Inclusion site for information on NIH''s EEO program, Reasonable
+        accommodation procedures, laws, policy statements, and the operation of the
+        EEO complaint process.","WhatToExpectNext":"Once you submit your application
+        package, you will receive an acknowledgement email. You will be notified of
+        the status of your applications via email. In addition, you can track the
+        progress of your application package through your USAJOBS account. At the
+        discretion of the agency, you may be contacted via phone or email for an interview
+        or to provide additional information up to several months from the closing
+        date of the announcement. Please ensure you have provided accurate contact
+        information. To remain in consideration, you must respond in a timely manner
+        to our correspondence and requests for documentation or information throughout
+        the hiring process. Length of Eligibility: Eligible applicants may remain
+        in the inventory up to 120 days after the closing date of the vacancy announcement.
+        Note: We may choose to stop accepting applicants prior to the advertised closing
+        date if a need for this announcement no longer exists, so please apply early.","RequiredDocuments":"REQUIRED
+        FOR ALL APPLICANTS RESUME:\nYour resume must thoroughly describe how your
+        skills and experiences align to the criteria defined in the \"Qualifications\"
+        section of this announcement and it must support your responses to the assessment
+        questionnaire. We cannot assume you have performed the necessary experience
+        required for this position regardless of your employment history or academic
+        career. To ensure all of the essential information is in your resume, we encourage
+        you to use the USAJOBS online Resume Builder. If you choose to use your own
+        resume, you must ensure it contains all of the required information and you
+        organize it so we can associate the following information for each experience/position:
+        Job title Name of employer Beginning and ending dates of employment (month/day/year
+        format) Hours worked per week. We will assume full-time unless otherwise stated.
+        We will prorate part-time employment in crediting experience. Detailed description
+        of job duties, accomplishments, related skills, and responsibilities to include
+        any supervisory/managerial responsibilities and number of staff supervised
+        (if applicable) Series and grade or equivalent (if a federal position) If
+        the position has an education requirement or you are qualifying on the basis
+        of education, you must list your education history including the type of degree
+        and your major of study. If the position requires a certain number of credit
+        hours, you are strongly encouraged to list the relevant courses in your resume.
+        Do not include a photograph or video of yourself, or any sensitive information
+        (age, date of birth, marital status, protected health information, religious
+        affiliation, social security number, etc.) on your resume or cover letter.
+        We will not access web pages linked on your resume or cover letter to determine
+        your qualifications. For resume writing guidance, please visit the following
+        resources: NIH Jobs website, USAJOBS Resource Center, and the USAJOBS Resume
+        Writing Video Tutorial. ASSESSMENT QUESTIONNAIRE:\nYou must submit a completed
+        assessment questionnaire. Unless otherwise stated, we will only use the information
+        above to determine your qualifications. Not providing the required information
+        may result in a determination that you do not meet minimum requirements for
+        the position (e.g., an ineligible rating) or a lower rating. REQUIRED DOCUMENTATION
+        FOR CAREER TRANSITION CLAIMS Visit our websites to claim selection priority
+        through the Career Transition Assistance Program (CTAP) or the Interagency
+        Career Transition Assistance Program (ICTAP): CTAP: https://jobs.nih.gov/announcement-links/CTAP.htm
+        ICTAP: https://jobs.nih.gov/announcement-links/ictap.htm If you do not provide
+        the required information, we will assume you are not eligible or you do not
+        wish to be considered for any preference or eligibility. Please do not submit
+        any other supplementary documentation that is not requested of you. To protect
+        your personal information, we will only send your resume and cover letter
+        to the selecting official or hiring manager.","Benefits":"","BenefitsUrl":"https://hr.nih.gov/benefits","BenefitsDisplayDefaultText":true,"OtherInformation":"This
+        Open Continuous announcement establishes a list of qualified applicants to
+        be considered for Permanent Full-Time and Part-Time Nurse (Clinical Research)
+        vacancies as they occur. The first list of eligible applicants will be sent
+        to Hiring Managers on May 10th, 2021 which includes all applicants who self-certify
+        their eligibility by May 7th, 2021, 11:59 PM (EST). Subsequent cut-off dates
+        will be established based on the date a request for a List of Eligible Applicants
+        is received from the Hiring Manager to fill a vacancy. We will issue separate
+        lists based on Career and Interagency Transition Claims. Only those applicants
+        who self-identify as being qualified will be placed on the List of Eligibles.
+        If you are unable to apply online or need to fax a document you do not have
+        in electronic form, view the following link for information regarding an Alternate
+        Application. This position is designated as an \"emergency essential\" position
+        and the selected candidate will be considered an \"emergency essential\" employee
+        and will be required to be available, ready, willing, and able to report for
+        duty under all circumstances (e.g., inclement weather, government closings
+        and holidays, lapses in appropriations, non-emergency and emergency situations)
+        for operation 24 hours a day and 365 days per year coverage. A one-year probationary
+        period may be required upon selection/placement. PHS Commissioned Officers
+        interested in performing the duties of this position within the Commissioned
+        Corps should also apply online to this announcement in order to receive consideration.
+        The National Institutes of Health participates in the USCIS Electronic Employment
+        Eligibility Verification Program (E-Verify). E-Verify helps employers determine
+        employment eligibility of new hires and the validity of their Social Security
+        numbers. The NIH maintains a tobacco free work environment and campus. Must
+        be able to perform the essential duties of the position, with or without reasonable
+        accommodation. Visit our Applicant FAQs page for helpful information on the
+        application process. Visit our Total Compensation page for a detailed look
+        into the benefits, awards, leave, retirement and other incentives employees
+        may receive as part of a rewarding work environment.","KeyRequirements":[],"WithinArea":"False","CommuteDistance":"0","ServiceType":"01","AnnouncementClosingType":"01","AgencyContactEmail":"belllh@mail.nih.gov","AgencyContactPhone":"301-496-4782","SecurityClearance":"Other","DrugTestRequired":"False","PositionSensitivitiy":"Non-sensitive
+        (NS)/Low Risk","AdjudicationType":["Credentialing","Suitability/Fitness"],"TeleworkEligible":false},"IsRadialSearch":false}},"RelevanceRank":0},{"MatchedObjectId":"597252400","MatchedObjectDescriptor":{"PositionID":"NIH-CC-DH-21-10992057","PositionTitle":"Nurse
+        (Supplemental)","PositionURI":"https://www.usajobs.gov:443/GetJob/ViewDetails/597252400","ApplyURI":["https://www.usajobs.gov:443/GetJob/ViewDetails/597252400?PostingChannelID="],"PositionLocationDisplay":"Montgomery
+        County, Maryland","PositionLocation":[{"LocationName":"Montgomery County,
+        Maryland","CountryCode":"United States","CountrySubDivisionCode":"Maryland","CityName":"Montgomery
+        County, Maryland","Longitude":-77.20451,"Latitude":39.1366}],"OrganizationName":"National
+        Institutes of Health","DepartmentName":"Department of Health And Human Services","SubAgency":"Clinical
+        Center, Nursing Department","JobCategory":[{"Name":"Nurse","Code":"0610"}],"JobGrade":[{"Code":"GS"}],"PositionSchedule":[{"Name":"Intermittent","Code":"4"}],"PositionOfferingType":[{"Name":"Temporary","Code":"15318"}],"QualificationSummary":"MINIMUM
+        QUALIFICATIONS:\nIn order to meet the Basic Qualification Requirements for
+        a Nurse (Supplemental), GS-0610, you must: A. Have a graduate or higher level
+        degree, bachelor''s degree, associate degree, or diploma from an accredited
+        professional nursing educational program.\nThis education must have been accredited
+        by the Commission on Collegiate Nursing Education, Council on Accreditation
+        of Nurse Anesthesia Educational Programs, Accreditation Commission for Midwifery
+        Education, or an accrediting body recognized by the U.S. Department of Education
+        at the time the degree was obtained.\nNOTE: Official certification from the
+        Commission on Graduates of Foreign Nursing Schools is required for individuals
+        who graduated from foreign nursing schools. License:\nB. Possess a current,
+        active, full and unrestricted license or registration as a professional nurse
+        from a State, the District of Columbia, the Commonwealth of Puerto Rico, or
+        a territory of the United States. AND C. You must have passed the National
+        Council Licensure Examination for Registered Nurses (NCLEX-RN) or obtained
+        licensure before the implementation of the NCLEX-RN. Individuals who have
+        not passed the NCLEX-RN, but meet all other qualification requirements will
+        be subject to a comprehensive evaluation of both their education and experience
+        prior to final appointment.\nADDITIONAL QUALIFICATIONS:\nIn addition, to qualify
+        for a Nurse (Supplemental) position at the GS-12 level, you must have at least
+        1 year of professional Nurse experience equivalent to at least the GS-11 level
+        in the federal service obtained in either the private or public sector, performing
+        the following types of tasks: Providing comprehensive nursing care to patients
+        based on the physician''s medical care plan and the physical, mental and emotional
+        needs of the patient; administering oxygen, IV fluid, blood transfusions and
+        prescribed oral, subcutaneous and intramuscular medications; managing nasal-pharyngeal
+        and gastric suction as well as a variety of other drainage tubes; preparing
+        patients for surgical and/or diagnostic procedures; setting-up, operating
+        and monitoring specialized equipment such as cardiac monitors, respirators,
+        defibrillators, etc.; providing care in a variety of clinical settings, such
+        as Inpatient Patient Care Units (e.g. oncology, pediatric, neurology, behavioral
+        health), ICU, Operating Room, PACU, Donor Services, blood services Infusion
+        Centers and Ambulatory Clinics.\nDo not copy and paste the duties, specialized
+        experience, or occupational assessment questionnaire from this announcement
+        into your resume as that will not be considered a demonstration of your qualifications
+        for this position. Experience refers to paid and unpaid experience, including
+        volunteer work done through National Service programs (e.g., Peace Corps,
+        AmeriCorps) and other organizations (e.g., professional; philanthropic; religious;
+        spiritual; community, student, social). Volunteer work helps build critical
+        competencies, knowledge, and skills and can provide valuable training and
+        experience that translates directly to paid employment. You will receive credit
+        for all qualifying experience, including volunteer experience. You will receive
+        credit for all experience material to the position, including experience gained
+        in religious, civic, welfare, service, and organizational activities, regardless
+        of whether you received pay. Preview assessment questionnaire before you apply:
+        https://apply.usastaffing.gov/ViewQuestionnaire/10992057 This announcement
+        covers multiple areas within the NIH Clinical Center Nursing Department:\nInpatient
+        Units: Rotating shifts (may include weekends, holidays, evening and nights)\nICU\nPediatrics\nOncology
+        Surgical, Medical and Transplant\nMedical Surgical\nAdult Behavioral Health\nAddictions\nNeurology\nPediatric
+        Behavioral Health\nSpecial Clinical Studies Unit\nBlood Services/Apheresis
+        Outpatient Clinics: Primarily Monday-Friday 7-4:30 with occasional extended
+        hours\nHematology and Oncology\nPediatrics\nBehavioral Health\nInfectious
+        Disease\nRadiation Oncology\nCardiology\nOphthalmology\nMedical Surgical Specialties\nNeurology\nENT
+        Specialty Areas: (May include weekends and on-call)\nOR\nPACU\nInterventional
+        Radiology\nDental Clinic\nProcedure Services, Endoscopy, Moderate Sedation\nDialysis\nDay
+        Hospital/Infusion Center (Oncology, Pediatrics, Medical Surgical)\nCare Coordination
+        and Case Management","PositionRemuneration":[{"MinimumRange":"90915.0","MaximumRange":"116034.0","RateIntervalCode":"Per
+        Year"}],"PositionStartDate":"2021-04-05","PositionEndDate":"2021-12-24","PublicationStartDate":"2021-04-05","ApplicationCloseDate":"2021-12-24","PositionFormattedDescription":[{"Label":"Dynamic
+        Teaser","LabelDescription":"Hit highlighting for keyword searches."}],"UserArea":{"Details":{"JobSummary":"This
+        position as a Per Diem Clinical Research Nurse supports the supplemental staffing
+        needs of the multiple patient care areas of the hospital as a team member
+        in the Nursing Department, of the Clinical Center of the National Institutes
+        of Health (NIH) in the Department of Health and Human Services (HHS). Per
+        diem nurses may be unit based or part of the Staffing and Workforce Planning
+        float pool.","WhoMayApply":{"Name":"","Code":""},"LowGrade":"12","HighGrade":"12","SubAgencyName":"Clinical
+        Center, Nursing Department","OrganizationCodes":"HE/HE38","Relocation":"False","HiringPath":["public"],"TotalOpenings":"Many","AgencyMarketingStatement":"The
+        National Institutes of Health (NIH) is the premier biomedical research center
+        for the world. Its 27 Institutes and Centers employ approximately 18,000 employees
+        doing a vast array of jobs, all supporting efforts for a healthy nation. For
+        information on the NIH mission, goals, and Institutes and Centers, visit NIH
+        Overview. The National Institutes of Health (NIH), Clinical Center (CC), is
+        the 200-bed research hospital and ambulatory care research facility in Bethesda,
+        Maryland. It is the largest inpatient facility in the country devoted exclusively
+        to clinical research, and provides a full range of services from ambulatory
+        care to critical care and special procedures. The focus at the CC on early
+        phase and first-in-human clinical trials and on the study of rare diseases
+        makes it possible to rapidly translate scientific observations and laboratory
+        discoveries into new approaches for diagnosing, treating, and preventing disease.
+        The National Institutes of Health Clinical Center leads the nation in implementing
+        a specialty practice model for Clinical Research Nursing which defines the
+        roles and contribution of nurses providing care to research participants.
+        If you want to play a significant role supporting the vision at the Clinical
+        Center in leading the Nation in implementing a specialty practice model for
+        Clinical Research Nursing, then consider joining our team! For more information,
+        visit http://www.cc.nih.gov/.","TravelCode":"0","ApplyOnlineUrl":"https://apply.usastaffing.gov/Application/Apply","DetailStatusUrl":"https://apply.usastaffing.gov/Application/ApplicationStatus","MajorDuties":["The
+        Clinical Center Nursing Department service areas include Oncology and Critical
+        Care (OCC); Neuroscience, Behavioral Health and Pediatrics (NBHP), Medical
+        Surgical Specialties (MSS), Perioperative Nursing, Interventional Radiology,
+        and more. The ideal candidate will have recent acute care experience in one
+        or more the following specialties: Medical Surgical, Oncology, Pediatrics,
+        Behavioral Health, Outpatient or Critical Care, Apheresis & Blood Services,Perioperative,
+        PACU, or IR. As a GS-0610-12 Nurse (Supplemental) your duties may include
+        but are not limited to the following: Exercise the full domain of practice
+        for the specialty of clinical research nursing including providing clinical
+        care to research participants, supporting protocol implementation, data collection,
+        continuity of care, human subject''s protection and dissemination of clinical
+        research findings. Utilize advanced critical thinking and nursing skills to
+        assess, plan, perform, and evaluate nursing care for individual patients,
+        their families and significant others, who are participants in biomedical
+        research protocols. Care requirements are determined by the scope of study
+        participation, the clinical condition of the patient and the requirements
+        and clinical effects of research procedures. The impact of the research process
+        on patient care is identified and communicated. Interventions adjusted based
+        on findings, and issues/variances reported promptly to the research team.
+        Evidence-based practice is incorporated into nursing practice. Support biomedical
+        research through detailed observation, measurement, and accurate data collection
+        related to pertinent assessment as defined by the protocol specifications
+        and the nurse''s clinical judgment. Accurately document observations, identify
+        trends and important findings, and effectively communicate this information
+        to the multidisciplinary research team and nursing colleagues. Provide feedback
+        to colleagues and investigators on all issues affecting the quality of the
+        research endeavor, assist less-experienced nurses in learning the specifics
+        of studies or protocols, evaluate patient trends in outcomes and compliance,
+        and contribute to the design of clinical trials. Provide patient-focused nursing
+        leadership within the interdisciplinary team and collaborate with team members
+        to create and communicate a plan of care that balances clinical care needs
+        with research needs and allows for safe and effective collection of clinical
+        research data. Contribute to multidisciplinary conferences and activities
+        regarding research participant care and protocol implementation. Delegate,
+        guide and coordinate the work of nursing staff and support personnel. Provide
+        independent direct patient care within competency scope to one or more of
+        the following patient populations: Medical Surgical, Oncology, Pediatrics
+        , Behavioral Health, Outpatient or Critical Care See \"Next Steps\" section
+        for detailed information on the application process."],"Education":"This position
+        has an education requirement. You are strongly encouraged to submit a copy
+        of your transcripts (or a list of your courses including titles, credit hours
+        completed and grades). Unofficial transcripts will be accepted in the application
+        package. Official transcripts will be required from all selectees prior to
+        receiving an official offer. Click here for information on Foreign Education.","Requirements":"","Evaluations":"Additional
+        selections may be made for similar positions across the Department of Health
+        and Human Services (HHS) within the local commuting area(s) of the location
+        identified in this announcement. By applying, you agree to have your application
+        shared with interested selecting official(s) at HHS. Clearance of CTAP/ICTAP
+        will be applied for similar positions across HHS. The position(s) advertised
+        in this announcement are covered by a direct hire authority. Traditional rating
+        and ranking of applicants, including category rating, does not apply to this
+        vacancy. You will be initially evaluated against the basic qualifications
+        only. Qualified applicants will be referred for consideration in accordance
+        with the Office of Personnel Management direct hire guidelines. Veterans''
+        Preference does not apply to positions covered by a direct hire authority.
+        To determine your qualifications and referral status, we may review your resume
+        and supporting documentation and compare it against your responses to the
+        vacancy questionnaire. Ensure you support your self-ratings by the information
+        you provide in your application. We may verify or assess your qualifications
+        at any time. Inflated or unsupported qualifications may affect your rating.
+        Any misrepresentation or material omission of facts may be sufficient cause
+        to end further consideration of your candidacy. Persons listed as having knowledge
+        of your past accomplishments or experience in your application may be contacted
+        for verification purposes at any time. Verification may, but need not, begin
+        prior to receiving an offer. To be considered well qualified for the purposes
+        of the Career Transition Assistance Program (CTAP) and the Interagency Career
+        Transition Assistance Program (ICTAP), you must be able to satisfactorily
+        perform the duties of the position upon entry and substantively exceed the
+        basic qualifications and meet all eligibility, physical, medical, suitability,
+        and all other requirements.","HowToApply":"To apply for this position, please
+        read and follow all instructions in this announcement, complete the online
+        application, and submit the documentation specified in the \"Required Documents\"
+        section. Your complete application package must be submitted by 11:59 PM Eastern
+        Time (ET) on 12/24/2021 to receive consideration. To begin, click Apply to
+        access the online application. You will need to be logged into your USAJOBS
+        account to apply. Follow the prompts to select your resume and/or other supporting
+        documents to be included with your application package. See the \"Required
+        Documents\" section for any additional forms and/or supplemental materials
+        required. Read all Eligibility questions and respond accordingly to any Eligibility
+        you wish to claim. You will only be considered for those Eligibility questions
+        (Status Applicant, Reinstatement, Schedule A, etc.) you respond in the affirmative
+        to, regardless of what documentation you submit. We cannot assume you intended
+        to respond differently to a question based on other information in your application
+        package. Complete the assessment questionnaire. Applicants are asked all questions
+        regardless of their consideration preferences. We will only consider you for
+        the grades, series, locations, specialties, and other considerations that
+        you self-identify as being qualified for or interested in. Preview assessment
+        questionnaire before you apply: https://apply.usastaffing.gov/ViewQuestionnaire/10992057
+        Verify all required documentation is included in your application package,
+        review your responses to the assessment questionnaire for accuracy, and then
+        submit your application. In addition to the required documents, we encourage
+        you to submit a cover letter, copy of your transcripts, and any applicable
+        certifications or licenses. Even though this information is not required at
+        the time of application, we may request this information later. We cannot
+        assume responsibility or grant extensions for personal issues (e.g., troubles
+        navigating the application process, loss of internet, not understanding a
+        question) when applying to our announcements. For technical difficulties,
+        contact HR Systems Support between 8:00 AM and 4:30 PM ET Monday through Friday
+        at hrss@nih.gov. If you need any other accommodation or assistance with applying,
+        please contact Lashawn Bell at belllh@mail.nih.gov. Requests for reasonable
+        accommodations must be made before the announcement closing date. NIH''s EEO
+        and Diversity and Inclusion Policy Statement Visit the NIH''s Office of Equity,
+        Diversity, and Inclusion site for information on NIH''s EEO program, Reasonable
+        accommodation procedures, laws, policy statements, and the operation of the
+        EEO complaint process.","WhatToExpectNext":"Once you submit your application
+        package, you will receive an acknowledgement email. You will be notified of
+        the status of your applications via email. In addition, you can track the
+        progress of your application package through your USAJOBS account. After we
+        receive application packages (including all required documents), on the date
+        above, and upon request by the Hiring Managers, applicants who self-certify
+        that they meet the stated qualifications requirements will be sent to the
+        Hiring Manager(s). Hiring Manager(s) will select applicants possessing desired
+        experience from the list of certified eligible applicants. HR will then review
+        these applications to validate qualification and eligibility requirements
+        are met and make job offers accordingly. If the Hiring Manager(s) is interested
+        in your application, applicants may be contacted directly for an interview.
+        Please note: At the discretion of the agency, you may be contacted via phone
+        or email for an interview or to provide additional information up to several
+        months from the closing date of the announcement. Please ensure you have provided
+        accurate contact information. To remain in consideration, you must respond
+        in a timely manner to our correspondence and requests for documentation or
+        information throughout the hiring process. Length of Eligibility: Eligible
+        applicants may remain in the inventory up to 120 days after the closing date
+        of the vacancy announcement.\nNote: We may choose to stop accepting applicants
+        prior to the advertised closing date if a need for this announcement no longer
+        exists, so please apply early.","RequiredDocuments":"REQUIRED FOR ALL APPLICANTS
+        RESUME:\nYour resume must thoroughly describe how your skills and experiences
+        align to the criteria defined in the \"Qualifications\" section of this announcement
+        and it must support your responses to the assessment questionnaire. We cannot
+        assume you have performed the necessary experience required for this position
+        regardless of your employment history or academic career. To ensure all of
+        the essential information is in your resume, we encourage you to use the USAJOBS
+        online Resume Builder. If you choose to use your own resume, you must ensure
+        it contains all of the required information and you organize it so we can
+        associate the following information for each experience/position: Job title
+        Name of employer Beginning and ending dates of employment (month/day/year
+        format) Hours worked per week. We will assume full-time unless otherwise stated.
+        We will prorate part-time employment in crediting experience. Detailed description
+        of job duties, accomplishments, related skills, and responsibilities to include
+        any supervisory/managerial responsibilities and number of staff supervised
+        (if applicable) Series and grade or equivalent (if a federal position) If
+        the position has an education requirement or you are qualifying on the basis
+        of education, you must list your education history including the type of degree
+        and your major of study. If the position requires a certain number of credit
+        hours, you are strongly encouraged to list the relevant courses in your resume.
+        Do not include a photograph or video of yourself, or any sensitive information
+        (age, date of birth, marital status, protected health information, religious
+        affiliation, social security number, etc.) on your resume or cover letter.
+        We will not access web pages linked on your resume or cover letter to determine
+        your qualifications. For resume writing guidance, please visit the following
+        resources: NIH Jobs website, USAJOBS Resource Center, and the USAJOBS Resume
+        Writing Video Tutorial. ASSESSMENT QUESTIONNAIRE:\nYou must submit a completed
+        assessment questionnaire. Unless otherwise stated, we will only use the information
+        above to determine your qualifications. Not providing the required information
+        may result in a determination that you do not meet minimum requirements for
+        the position (e.g., an ineligible rating) or a lower rating. REQUIRED DOCUMENTATION
+        FOR CAREER TRANSITION CLAIMS Visit our websites to claim selection priority
+        through the Career Transition Assistance Program (CTAP) or the Interagency
+        Career Transition Assistance Program (ICTAP): CTAP: https://jobs.nih.gov/announcement-links/CTAP.htm
+        ICTAP: https://jobs.nih.gov/announcement-links/ictap.htm If you do not provide
+        the required information, we will assume you are not eligible or you do not
+        wish to be considered for any preference or eligibility. Please do not submit
+        any other supplementary documentation that is not requested of you. To protect
+        your personal information, we will only send your resume and cover letter
+        to the selecting official or hiring manager.","Benefits":"","BenefitsUrl":"https://hr.nih.gov/benefits","BenefitsDisplayDefaultText":true,"OtherInformation":"This
+        Open Continuous announcement establishes a list of qualified applicants to
+        be considered for Intermittent Nurse (Supplemental) vacancies as they occur.
+        The first list of eligible applicants will be sent to Hiring Managers on April
+        12th, 2021 which includes all applicants who self-certify their eligibility
+        by April 9th, 2021 11:59 PM (EST). Subsequent cut-off dates will be established
+        based on the date a request for a List of Eligible Applicants is received
+        from the Hiring Manager to fill a vacancy. If you are unable to apply online
+        or need to fax a document you do not have in electronic form, view the following
+        link for information regarding an Alternate Application. This position is
+        designated as an \"emergency essential\" position and the selected candidate
+        will be considered an \"emergency essential\" employee and will be required
+        to be available, ready, willing, and able to report for duty under all circumstances
+        (e.g., inclement weather, government closings and holidays, lapses in appropriations,
+        non-emergency and emergency situations) for operation 24 hours a day and 365
+        days per year coverage. A one-year probationary period may be required upon
+        selection/placement. PHS Commissioned Officers interested in performing the
+        duties of this position within the Commissioned Corps should also apply online
+        to this announcement in order to receive consideration. The National Institutes
+        of Health participates in the USCIS Electronic Employment Eligibility Verification
+        Program (E-Verify). E-Verify helps employers determine employment eligibility
+        of new hires and the validity of their Social Security numbers. The NIH maintains
+        a tobacco free work environment and campus. Must be able to perform the essential
+        duties of the position, with or without reasonable accommodation. Visit our
+        Applicant FAQs page for helpful information on the application process. Visit
+        our Total Compensation page for a detailed look into the benefits, awards,
+        leave, retirement and other incentives employees may receive as part of a
+        rewarding work environment.","KeyRequirements":[],"WithinArea":"False","CommuteDistance":"0","ServiceType":"01","AnnouncementClosingType":"01","AgencyContactEmail":"belllh@mail.nih.gov","AgencyContactPhone":"301-496-4782","SecurityClearance":"Other","DrugTestRequired":"False","PositionSensitivitiy":"Non-sensitive
+        (NS)/Low Risk","AdjudicationType":["Credentialing","Suitability/Fitness"],"TeleworkEligible":false},"IsRadialSearch":false}},"RelevanceRank":0},{"MatchedObjectId":"611835300","MatchedObjectDescriptor":{"PositionID":"NIH-NINR-IMP-21-11181932","PositionTitle":"Budget
+        Analyst","PositionURI":"https://www.usajobs.gov:443/GetJob/ViewDetails/611835300","ApplyURI":["https://www.usajobs.gov:443/GetJob/ViewDetails/611835300?PostingChannelID="],"PositionLocationDisplay":"Montgomery
+        County, Maryland","PositionLocation":[{"LocationName":"Montgomery County,
+        Maryland","CountryCode":"United States","CountrySubDivisionCode":"Maryland","CityName":"Montgomery
+        County, Maryland","Longitude":-77.20451,"Latitude":39.1366}],"OrganizationName":"National
+        Institutes of Health","DepartmentName":"Department of Health And Human Services","SubAgency":"The
+        National Institute of Nursing Research (NINR),  Division of Management Services
+        (DMS)","JobCategory":[{"Name":"Budget Analysis","Code":"0560"}],"JobGrade":[{"Code":"GS"}],"PositionSchedule":[{"Name":"Full-time","Code":"1"}],"PositionOfferingType":[{"Name":"Permanent","Code":"15317"}],"QualificationSummary":"You
+        qualify at the GS-12 level, if you meet the following qualification requirement:
+        You must have 1 year of specialized experience equivalent to at least the
+        GS-11 level in the Federal service obtained in either the private or public
+        sector, performing the following types of tasks: Serving as a point of contact
+        on the interpretation and application of organizational guidelines for the
+        budget execution process; draft budgetary and financial policies and procedures
+        for parent and subordinate offices; summarizing budgetary data from various
+        sources and offices to develop budget models (Static, Zero-based, Activity-based);
+        recommending budgetary adjustments to support requests for increases, decreases,
+        or movement of funds. You qualify at the GS-13 level, if you meet the following
+        qualification requirement: You must have 1 year of specialized experience
+        equivalent to at least the GS-12 level in the Federal service obtained in
+        either the private or public sector, performing the following types of tasks:
+        Editing and publishing budgetary and financial policies and procedures for
+        parent and subordinate offices; defending budget requests and budget modeling
+        reports before senior management; developing alternative methods of funding
+        for activities subject to fluctuating policies and changing demands; conducting
+        root cause analysis and establishing cause and effect relationships to solve
+        systemic financial issues. Do not copy and paste the duties, specialized experience,
+        or occupational assessment questionnaire from this announcement into your
+        resume as that will not be considered a demonstration of your qualifications
+        for this position. You will receive credit for all experience material to
+        the position, including experience gained in religious, civic, welfare, service,
+        and organizational activities, regardless of whether you received pay. Preview
+        assessment questionnaire before you apply: https://apply.usastaffing.gov/ViewQuestionnaire/11181932","PositionRemuneration":[{"MinimumRange":"87198.0","MaximumRange":"134798.0","RateIntervalCode":"Per
+        Year"}],"PositionStartDate":"2021-08-26","PositionEndDate":"2021-09-02","PublicationStartDate":"2021-08-26","ApplicationCloseDate":"2021-09-02","PositionFormattedDescription":[{"Label":"Dynamic
+        Teaser","LabelDescription":"Hit highlighting for keyword searches."}],"UserArea":{"Details":{"JobSummary":"Join
+        a dynamic and collaborative team responsible for budget formulation, execution
+        and reporting of the NIH budget. The incumbent of this position serves as
+        a Budget Analyst assigned to the Office of Financial Services (OFS) in the
+        Division of Management Services (DMS), National Institute of Nursing Research
+        (NINR), National Institutes of Health (NIH), Department of Health and Human
+        Services (DHHS).","WhoMayApply":{"Name":"","Code":""},"LowGrade":"12","HighGrade":"13","SubAgencyName":"The
+        National Institute of Nursing Research (NINR),  Division of Management Services
+        (DMS)","OrganizationCodes":"HE/HE38","Relocation":"False","HiringPath":["fed-internal-search"],"AgencyMarketingStatement":"The
+        National Institutes of Health (NIH), a part of the U.S. Department of Health
+        and Human Services, is the largest biomedical research funding organization
+        in the world. NIH is made up of 27 Institutes and Centers, with a specific
+        research agenda, often focusing on particular diseases or body systems. NIH
+        employs approximately 18,000 employees in varied occupations, all supporting
+        research efforts that improve health and save lives. For more information
+        on NIH''s mission and goals, and its 27 Institutes and Centers, visit the
+        NIH website.","TravelCode":"0","ApplyOnlineUrl":"https://apply.usastaffing.gov/Application/Apply","DetailStatusUrl":"https://apply.usastaffing.gov/Application/ApplicationStatus","MajorDuties":["As
+        a GS-0560-13 your duties may include but are not limited to the following:
+        Manage and perform the fiduciary responsibilities associated with the financial
+        and budget administration system which ensures against over-obligation of
+        funds and avoids the premature release of budget authority levels in excess
+        of those appropriated, authorized or distributed by law. Prepare background
+        material for use in briefings to officials scheduled to appear before Congressional
+        appropriations committees; including compiling narrative and statistical material
+        and preparing exhibits and background information. Formulate and develop future
+        budgetary requirements for complex mechanisms of support, using historical
+        data, trend analysis and relevant funding patterns. Analyze specific budgetary
+        and fiscal areas of special concern and recommend procedures and methods for
+        change, many of which required continuing or long-range analysis. Provide
+        advice and recommendations on all aspects of budget to program officials and
+        managers. Develop proposed budgetary policy and procedural guidance for subordinate
+        program offices. Monitor all mechanisms that support the intramural and extramural
+        programs, including any reimbursements and co-funding support. Allocate funds
+        to cover future objectives. Oversee all facets of the funds management function;
+        in particular, budget execution, funds allocation, and funds control. The
+        duties performed at the GS-12 level are similar to the 13 level, but performed
+        with less complexity and closer supervision."],"Education":"","Requirements":"","Evaluations":"Additional
+        selections may be made for similar positions across the Department of Health
+        and Human Services (HHS) within the local commuting area(s) of the location
+        identified in this announcement. By applying, you agree to have your application
+        shared with interested selecting official(s) at HHS. Clearance of CTAP/ICTAP
+        will be applied for similar positions across HHS. To determine your qualifications
+        and referral status, we may review your resume and supporting documentation
+        and compare it against your responses to the vacancy questionnaire. Ensure
+        you support your self-ratings by the information you provide in your application.
+        We may verify or assess your qualifications at any time. Inflated or unsupported
+        qualifications may affect your rating. Any misrepresentation or material omission
+        of facts may be sufficient cause to end further consideration of your candidacy.
+        Persons listed as having knowledge of your past accomplishments or experience
+        in your application may be contacted for verification purposes at any time.
+        Verification may, but need not, begin prior to receiving an offer. To be considered
+        well qualified for the purposes of the Career Transition Assistance Program
+        (CTAP), you must be able to satisfactorily perform the duties of the position
+        upon entry and substantively exceed the basic qualifications and meet all
+        eligibility, physical, medical, suitability, and all other requirements.","HowToApply":"To
+        apply for this position, please read and follow all instructions in this announcement,
+        complete the online application, and submit the documentation specified in
+        the \"Required Documents\" section. Your complete application package must
+        be submitted by 11:59 PM Eastern Time (ET) on 09/02/2021 to receive consideration.
+        To begin, click Apply to access the online application. You will need to be
+        logged into your USAJOBS account to apply. Follow the prompts to select your
+        resume and/or other supporting documents to be included with your application
+        package. See the \"Required Documents\" section for any additional forms and/or
+        supplemental materials required. Read all Eligibility questions and respond
+        accordingly to any Eligibility you wish to claim. You will only be considered
+        for those Eligibility questions (Status Applicant, Reinstatement, Schedule
+        A, etc.) you respond in the affirmative to, regardless of what documentation
+        you submit. We cannot assume you intended to respond differently to a question
+        based on other information in your application package. Complete the assessment
+        questionnaire. Applicants are asked all questions regardless of their consideration
+        preferences. We will only consider you for the grades, series, locations,
+        specialties, and other considerations that you self-identify as being qualified
+        for or interested in. Preview assessment questionnaire before you apply: https://apply.usastaffing.gov/ViewQuestionnaire/11181932
+        Verify all required documentation is included in your application package,
+        review your responses to the assessment questionnaire for accuracy, and then
+        submit your application. In addition to the required documents, we encourage
+        you to submit a cover letter, copy of your transcripts, and any applicable
+        certifications or licenses. Even though this information is not required at
+        the time of application, we may request this information later. We cannot
+        assume responsibility or grant extensions for personal issues (e.g., troubles
+        navigating the application process, loss of internet, not understanding a
+        question) when applying to our announcements. For technical difficulties,
+        contact HR Systems Support between 8:00 AM and 4:30 PM ET Monday through Friday
+        at hrss@nih.gov. If you need any other accommodation or assistance with applying
+        please contact Camille Tate attatecal@mail.nih.gov. Requests for reasonable
+        accommodations must be made before the announcement closing date. NIH''s EEO
+        and Diversity and Inclusion Policy Statement Visit the NIH''s Office of Equity,
+        Diversity, and Inclusion site for information on NIH''s EEO program, Reasonable
+        accommodation procedures, laws, policy statements, and the operation of the
+        EEO complaint process.","WhatToExpectNext":"Once you submit your application
+        package, you will receive an acknowledgement email. You will be notified of
+        the status of your applications via email. In addition, you can track the
+        progress of your application package through your USAJOBS account. At the
+        discretion of the agency, you may be contacted via phone or email for an interview
+        or to provide additional information up to several months from the closing
+        date of the announcement. Please ensure you have provided accurate contact
+        information. To remain in consideration, you must respond in a timely manner
+        to our correspondence and requests for documentation or information throughout
+        the hiring process.","RequiredDocuments":"RESUME:\nYour resume must thoroughly
+        describe how your skills and experiences align to the criteria defined in
+        the \"Qualifications\" section of this announcement and it must support your
+        responses to the assessment questionnaire. We cannot assume you have performed
+        the necessary experience required for this position regardless of your employment
+        history or academic career. To ensure all of the essential information is
+        in your resume, we encourage you to use the USAJOBS online Resume Builder.
+        If you choose to use your own resume, you must ensure it contains all of the
+        required information and you organize it so we can associate the following
+        information for each experience/position: Job title Name of employer Beginning
+        and ending dates of employment (month/day/year format) Hours worked per week.
+        We will assume full-time unless otherwise stated. We will prorate part-time
+        employment in crediting experience. Detailed description of job duties, accomplishments,
+        related skills, and responsibilities to include any supervisory/managerial
+        responsibilities and number of staff supervised (if applicable) Series and
+        grade or equivalent (if a federal position) If the position has an education
+        requirement or you are qualifying on the basis of education, you need to list
+        your education history including the type of degree and your major of study.
+        If the position requires a certain number of credit hours, you are strongly
+        encouraged to list the relevant courses in your resume. Do not include a photograph
+        or video of yourself, or any sensitive information (age, date of birth, marital
+        status, protected health information, religious affiliation, social security
+        number, etc.) on your resume or cover letter. We will not access web pages
+        linked on your resume or cover letter to determine your qualifications. For
+        resume writing guidance, please visit the following resources: NIH Jobs website,
+        USAJOBS Resource Center, and the USAJOBS Resume Writing Video Tutorial. ASSESSMENT
+        QUESTIONNAIRE:\nYou must submit a completed assessment questionnaire. ELIGIBILITY
+        DOCUMENTATION: To be considered eligible, you must submit the following documentation,
+        if applicable to you AND respond accordingly to the associated question on
+        the online questionnaire. If you do not provide the required information,
+        we will assume you are not eligible or you do not wish to be considered for
+        any preference or eligibility. SF-50 - A copy of your most recent competitive
+        career or career conditional SF-50 that shows the effective date of your latest
+        position and the full performance level. You may obtain a copy of your SF-50
+        from your eOPF. Visit our site on the Career Transition Assistance Program
+        (CTAP) for more information on eligibility and required documentation. Please
+        do not submit any other supplementary documentation that is not requested
+        of you. To protect your personal information, we will only send your resume
+        and cover letter to the selecting official or hiring manager.","Benefits":"","BenefitsUrl":"https://hr.nih.gov/benefits","BenefitsDisplayDefaultText":true,"OtherInformation":"If
+        you are unable to apply online or need to fax a document you do not have in
+        electronic form, view the following link for information regarding an Alternate
+        Application. If selected, you will be required to complete a Confidential
+        Financial Disclosure Report, OGE Form 450 to determine if a conflict or an
+        appearance of a conflict exists between your financial interest and your prospective
+        position with the agency. This information is required annually. For information,
+        visit the NIH Ethics website: https://ethics.od.nih.gov/topics/fd.htm. This
+        position is designated as an \"emergency essential\" position and the selected
+        candidate will be considered an \"emergency essential\" employee and will
+        be required to be available, ready, willing, and able to report for duty under
+        all circumstances (e.g., inclement weather, government closings and holidays,
+        lapses in appropriations, non-emergency and emergency situations) for operation
+        24 hours a day and 365 days per year coverage. A one-year probationary period
+        may be required upon selection/placement. PHS Commissioned Officers interested
+        in performing the duties of this position within the Commissioned Corps should
+        apply online to this announcement to receive consideration. The National Institutes
+        of Health participates in the USCIS Electronic Employment Eligibility Verification
+        Program (E-Verify). E-Verify helps employers determine employment eligibility
+        of new hires and the validity of their Social Security numbers. The NIH maintains
+        a tobacco free work environment and campus. Must be able to perform the essential
+        duties of the position, with or without reasonable accommodation. Visit our
+        Applicant FAQs page for helpful information on the application process. Visit
+        our Total Compensation page for a detailed look into the benefits, awards,
+        leave, retirement and other incentives employees may receive as part of a
+        rewarding work environment.","KeyRequirements":[],"WithinArea":"False","CommuteDistance":"0","ServiceType":"01","AnnouncementClosingType":"01","AgencyContactEmail":"tatecal@mail.nih.gov","AgencyContactPhone":"301-451-4654","SecurityClearance":"Other","DrugTestRequired":"False","PositionSensitivitiy":"Non-sensitive
+        (NS)/Low Risk","AdjudicationType":["Credentialing","Suitability/Fitness"],"TeleworkEligible":true},"IsRadialSearch":false}},"RelevanceRank":0}],"UserArea":{"NumberOfPages":"1","IsRadialSearch":true,"ResolvedLocation":["Baltimore,
+        MD"]}}}'
+    http_version:
+  recorded_at: Tue, 31 Aug 2021 20:32:16 GMT
+recorded_with: VCR 4.0.0

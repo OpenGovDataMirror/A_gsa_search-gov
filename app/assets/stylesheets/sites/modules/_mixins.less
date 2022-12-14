@@ -1,0 +1,48 @@
+.off-screen-text {
+  background-color: transparent;
+  border: 0;
+  height: 1px;
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
+  *text-indent: -9999px;
+  width: 1px;
+}
+
+.off-screen-text:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.on-screen-text {
+  position: static;
+  height: auto;
+  width: auto;
+  *text-indent: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}

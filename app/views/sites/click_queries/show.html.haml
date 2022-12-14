@@ -1,0 +1,23 @@
+= content_for_site_page_title @site, 'Queries leading to a Click'
+.sub-nav-heading
+  %h2 Queries leading to a Click
+  .action-bar
+    %ul
+      = list_item_with_link_to_current_help_page
+
+%h3= "Top Queries leading to '#{@url}' from #{@start_date} to #{@end_date}"
+
+%table.table.table-striped.table-bordered.table-kv-pairs
+  %thead
+    %tr
+      %th Top Queries
+      %th # of Clicks
+      %th View Clicks
+  %tbody
+    - @top_queries.each_with_index do |(query, total), idx|
+      %tr
+        %td
+          = "#{idx+1}. #{query}"
+        %td= number_with_delimiter(total)
+        %td= link_to "View Clicks", site_query_clicks_path(@site,
+          {:query => query, :start_date => @start_date, :end_date => @end_date})

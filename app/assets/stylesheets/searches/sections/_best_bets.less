@@ -1,0 +1,188 @@
+#best-bets {
+  .content-block();
+
+  @media (min-width: @screen-desktop) {
+    margin-bottom: @content-block-margin;
+  }
+
+  &.collapsed {
+    #best-bet-1, #best-bet-2 {
+      display: block;
+    }
+  }
+
+  .content-trigger {
+    &.one-column-hide-trigger {
+      display: none;
+    }
+
+    &.has-collapsed-featured-collection {
+      display: block;
+    }
+
+    @media (min-width: @screen-sm) {
+      &.two-column-hide-trigger {
+        display: none;
+      }
+
+      &.has-collapsed-featured-collection {
+        display: block;
+      }
+    }
+  }
+}
+
+#best-bets .featured-collection {
+  .title {
+    .text-overflow();
+
+    @media (min-width: @screen-desktop) {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .image-and-title {
+    .clearfix();
+    margin-bottom: 5px;
+  }
+
+  @featured-collection-image-width: 50px;
+  @featured-collection-content-left-margin: (@featured-collection-image-width + 10px);
+
+  @tablet-featured-collection-image-width: 110px;
+  @tablet-featured-collection-content-left-margin: (@tablet-featured-collection-image-width + 10px);
+
+  .image {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    width: @featured-collection-image-width;
+
+    @media (min-width: @screen-sm) {
+      width: @tablet-featured-collection-image-width;
+    }
+
+    img {
+      .img-responsive();
+    }
+  }
+
+  .links {
+    .clearfix();
+  }
+
+  ul {
+    .list-unstyled();
+    display: block;
+    overflow: hidden;
+
+    @media (min-width: @screen-sm) {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .title-and-links {
+    .clearfix();
+
+    .links-1 {
+      padding: 0.3em 0.3em 0;
+    }
+
+    .links-2 {
+      padding: 0 0.3em 0.3em;
+    }
+
+    @media (min-width: @screen-sm) {
+      .links-1, .links-2 {
+        padding: 0 0.3em 0.3em;
+      }
+    }
+  }
+
+  &.has-image {
+    .title-and-links {
+      @media (min-width: @screen-sm) {
+        margin-left: @tablet-featured-collection-content-left-margin;
+      }
+    }
+
+    .title {
+      margin-left: @featured-collection-content-left-margin;
+
+      @media (min-width: @screen-sm) {
+        margin-left: 0;
+      }
+    }
+
+    .links {
+      clear: both;
+
+      @media (min-width: @screen-sm) {
+        clear: none;
+        display: block;
+      }
+    }
+  }
+}
+
+#best-bets.collapsed .featured-collection {
+  ul.links-1 {
+    > li {
+      display: none;
+    }
+
+    .fc-link-item-1,
+    .fc-link-item-2,
+    .fc-link-item-3,
+    .fc-link-item-4,
+    .fc-link-item-5 {
+      display: block;
+    }
+  }
+
+  ul.links-2 {
+    display: none;
+    @media (min-width: @screen-sm) {
+      display: block;
+
+      > li {
+        display: none;
+      }
+
+      .fc-link-item-1,
+      .fc-link-item-2,
+      .fc-link-item-3,
+      .fc-link-item-4,
+      .fc-link-item-5 {
+        display: block;
+      }
+    }
+  }
+
+  &.one-column-show-both-links-list {
+    ul.links-2 {
+      display: block;
+
+      > li {
+        display: none;
+      }
+
+      @media (min-width: @screen-sm) {
+        .fc-link-item-1,
+        .fc-link-item-2,
+        .fc-link-item-3,
+        .fc-link-item-4,
+        .fc-link-item-5 {
+          display: block;
+        }
+      }
+    }
+
+    ul.links-1, ul.links-2 {
+      >li.one-column-always-show-item {
+        display: block;
+      }
+    }
+  }
+}

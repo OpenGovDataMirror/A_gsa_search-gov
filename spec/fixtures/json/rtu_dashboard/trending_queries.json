@@ -1,0 +1,42 @@
+{"took": 14, "timed_out": false, "_shards": {
+  "total": 1,
+  "successful": 1,
+  "failed": 0
+}, "hits": {
+  "total": 1050,
+  "max_score": 0.0,
+  "hits": []
+}, "aggregations": {
+  "agg": {
+    "doc_count": 1050,
+    "buckets": [
+      {
+        "key": "esse aconetimentomesta acontecendo aqui no riode janeiro",
+        "doc_count": 21,
+        "score": 0.09523809523809525,
+        "bg_count": 21,
+        "clientip_count": {
+          "value": 2
+        }
+      },
+      {
+        "key": "memorial day",
+        "doc_count": 19,
+        "score": 0.08616780045351474,
+        "bg_count": 19,
+        "clientip_count": {
+          "value": 10
+        }
+      },
+      {
+        "key": "petitions",
+        "doc_count": 31,
+        "score": 0.02321133786848073,
+        "bg_count": 100,
+        "clientip_count": {
+          "value": 10
+        }
+      }
+    ]
+  }
+}}

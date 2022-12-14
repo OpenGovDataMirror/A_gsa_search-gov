@@ -1,0 +1,131 @@
+#search-bar-nav-wrapper {
+  .clearfix();
+}
+
+#search-bar {
+  background-color: @block-background-color;
+  border-color: @block-border-color;
+  border-style: solid;
+  border-width: 1px;
+  height: 40px;
+  margin: @content-block-margin;
+  position: relative;
+
+  &:hover {
+    border-color: darken(@block-border-color, 20%);
+  }
+
+  @media (min-width: @screen-sm-min) {
+    margin-left: auto;
+    margin-right: auto;
+    width: (@screen-sm-min - (2 * @content-block-margin));
+  }
+
+  @media (min-width: @screen-md-min) {
+    height: 34px;
+  }
+
+  .twitter-typeahead {
+    width: 100%;
+  }
+
+  input[type='search'], input[type='text'] {
+    .box-shadow(none);
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.8em;
+    line-height: 1;
+    height: 38px;
+    padding-right: 0;
+    border-right: 40px solid transparent;
+    vertical-align: middle;
+
+    &::-ms-clear {
+      display: none;
+    }
+
+    @media (min-width: @screen-sm-min) {
+      border-right-width: 75px;
+    }
+
+    @media (min-width: @screen-md-min) {
+      height: 32px;
+    }
+  }
+
+  #search-button, #clear-button {
+    .text-hide();
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: @btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+    .user-select(none);
+    .icon();
+
+    height: 30px;
+    overflow: hidden;
+    padding: 7px;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    width: 30px;
+
+    @media (min-width: @screen-md-min) {
+      height: 26px;
+      width: 26px;
+      top: 3px;
+      right: 4px;
+    }
+  }
+
+  #clear-button {
+    background-position: -305px 7px;
+    display: none;
+    span {
+      .text-hide();
+    }
+  }
+
+  #search-button {
+    .icon-white();
+    background-position: -41px  7px;
+
+    @media (min-width: @screen-md-min) {
+      background-position: -43px  5px;
+    }
+  }
+
+  &.has-query-term {
+    #search-button {
+      display: none;
+    }
+
+    #clear-button {
+      display: inline-block;
+      @media (min-width: @screen-md-min) {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    &.has-query-term {
+      #search-button {
+        display: inline-block;
+      }
+      #clear-button {
+        right: 35px;
+      }
+    }
+  }
+
+  #tt-status {
+    .sr-only();
+  }
+}

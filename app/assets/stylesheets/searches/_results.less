@@ -1,0 +1,329 @@
+.content-block-item.content-block-item-header {
+  padding: 8px 12px;
+
+  .content-heading {
+    margin: 0;
+  }
+
+  @media (min-width: @screen-desktop) {
+    padding: 8px 12px 0;
+  }
+}
+
+#offer-commercial-results .content-block-item {
+  display: flex;
+  align-items: center;
+
+  .search-again-link {
+    font-weight: bold;
+  }
+  .search-again-icon {
+    text-align: center;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    float:left;
+  }
+  .search-again-message {
+    width: 100%;
+  }
+  .search-again-btn {
+    width: 70px;
+  }
+  .commercial-icon {
+    margin-top: 13px;
+  }
+  p {
+    display: inline;
+  }
+  h6 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}
+
+#search .content-block-item.content-block-item-footer {
+  clear: both;
+  font-size: @font-size-default;
+  line-height: 1;
+  padding: 0.1em;
+
+  .content-provider, .see-more {
+    margin: 0;
+
+    > a, > span {
+      display: block;
+      padding: 10px 12px 12px;
+
+      @media (min-width: @screen-desktop) {
+        padding: 8px 12px;
+      }
+    }
+  }
+
+  .content-provider {
+    text-align: right;
+
+    > a, > span {
+      color: @text-color;
+    }
+
+    a, a:focus, a:hover {
+      text-decoration: none;
+    }
+
+    .digital-gov-search {
+      .gov {
+        font-style: italic;
+      }
+
+      .search {
+        padding-left: 3px;
+      }
+    }
+
+    .azure, .bing {
+      span {
+        .text-hide();
+      }
+    }
+
+    .azure, .bing {
+      background: asset-data-url('searches/bing_logo.png') right no-repeat;
+      color: #505050;
+      line-height: 19px;
+      margin: 12px;
+      padding-right: 58px;
+      font-family: 'Arial';
+
+      @media (min-width: @screen-desktop) {
+        margin: 8px 12px;
+      }
+    }
+  }
+
+  .see-more {
+    text-align: left;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+#spelling-suggestion, #site-limits, #results {
+  .content-block();
+}
+
+#spelling-suggestion {
+  .suggested-query {
+    .item-title();
+
+    a {
+      font-style: italic;
+    }
+  }
+
+  .original-query {
+    font-size: @font-size-default;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+#site-limits {
+  font-size: @font-size-default;
+
+  span {
+    font-style: italic;
+  }
+}
+
+#search {
+  a { .tap-highlight(); }
+}
+
+#results .content-block-item-header {
+  .sr-only();
+}
+
+.result {
+  .title {
+    .item-title();
+
+    .uext_type {
+      bottom: 0.1em;
+      font-size: 75%;
+      position: relative;
+    }
+  }
+
+  .url, .description {
+    display: block;
+    word-wrap: break-word;
+  }
+
+  .url {
+    .text-overflow();
+    font-size: 1.7em;
+    height: 1.5em;
+  }
+
+  .description {
+    font-size: 1.6em;
+  }
+}
+
+#results.images {
+  .results-wrapper {
+    .clearfix();
+    padding: 6px;
+  }
+}
+
+.result.image {
+  border: 0;
+  float: left;
+  padding: 6px;
+  width: (100%/3);
+
+  @media (min-width: @screen-xs-min) {
+    width: 20%;
+  }
+
+  .description, .title, .url {
+    .sr-only();
+  }
+
+  .thumbnail {
+    max-width: 150px;
+    padding: 6px;
+
+    a {
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+}
+
+.result.video {
+  .thumbnail {
+    border: 0;
+    float: left;
+
+    a {
+      border: 1px solid #DDD;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      height: 68px;
+      width: 122px;
+
+      img {
+        position: absolute;
+        top: -11px;
+        left: 0;
+      }
+
+      > span {
+        background-color: black;
+        background-color: rgba(0,0,0, 0.7);
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0.2em;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      .icon-play {
+        .icon-white();
+        margin-right: 0.4em;
+      }
+    }
+  }
+
+  > span {
+    display: block;
+    margin-left: 130px;
+  }
+
+  .content-host-and-published-distance {
+    margin-bottom: 0.6em;
+  }
+
+  .content-host, .published-distance {
+    font-size: @font-size-default;
+  }
+
+  .content-host {
+    margin-right: 0.5em;
+  }
+
+  .published-distance {
+    color: @text-color;
+    display: block;
+
+    @media (min-width: @screen-sm-min) {
+      display: inline;
+    }
+  }
+
+  .description {
+    .sr-only();
+
+    @media (min-width: @screen-sm-min) {
+      display: block;
+      height: auto;
+      margin: 0 0 0 130px;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+#related-searches {
+  .content-block();
+
+  ul {
+    .list-unstyled();
+  }
+}
+
+#no-job-results {
+  margin: 10px 12px 12px;
+  font-size: @font-size-default;
+}
+
+#no-results {
+  .content-block();
+  font-size: @font-size-default;
+}
+
+#offer-commercial-results {
+  background-color: white;
+  font-size: @font-size-default;
+  margin: 10px 12px 12px;
+  padding: 15px;
+  min-height: 20px;
+}
+
+
+.well{
+  margin-bottom: 10px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    background-color: blue;
+    border-color: blue;
+}

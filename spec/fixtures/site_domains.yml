@@ -1,0 +1,10 @@
+non_existent:
+  affiliate: :non_existent_affiliate
+  domain: nonsense.gov
+  site_name: nonsense.gov
+
+basic:
+  affiliate: :basic_affiliate
+  domain: nps.gov
+  site_name: nps.gov
+

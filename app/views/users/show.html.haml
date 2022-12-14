@@ -1,0 +1,22 @@
+= content_for :title, 'My Account'
+.sub-nav-heading
+  %h2 Contact Information
+  .action-bar
+    %ul
+      = list_item_with_link_to_current_help_page
+      %li= link_to 'Edit', edit_account_path
+
+= render_flash_message
+
+%dl
+  %dt First name
+  %dd= @user.first_name
+%dl
+  %dt Last name
+  %dd= @user.last_name
+%dl
+  %dt Agency
+  %dd= @user.organization_name
+%dl
+  %dt Email
+  %dd= @user.email

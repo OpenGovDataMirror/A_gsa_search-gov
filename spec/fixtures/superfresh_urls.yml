@@ -1,0 +1,9 @@
+with_description_meta:
+  affiliate: :power_affiliate
+  url: http://www.nps.gov/fiis/parknews/fresnel-lens-building-opens-july-23.htm
+without_description_meta:
+  affiliate: :power_affiliate
+  url: http://www.google.com/
+pdf:
+  affiliate: :power_affiliate
+  url: http://www.state.nj.us/bpu/pdf/boardorders/3-2-07-III%20H.pdf

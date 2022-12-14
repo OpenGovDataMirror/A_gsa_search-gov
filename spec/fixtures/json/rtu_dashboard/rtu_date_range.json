@@ -1,0 +1,28 @@
+{
+  "took": 3,
+  "timed_out": false,
+  "_shards": {
+    "total": 15,
+    "successful": 15,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 219539,
+    "max_score": 0,
+    "hits": []
+  },
+  "aggregations": {
+    "stats": {
+      "count": 219539,
+      "min": 1400614196000,
+      "max": 1401293656000,
+      "avg": 1400914778491.4285,
+      "sum": 275260086236000,
+      "min_as_string": "2014-05-20T00:01:15.000Z",
+      "max_as_string": "2014-05-28T23:46:51.000Z",
+      "avg_as_string": "2014-05-24T00:46:18.491Z",
+      "sum_as_string": "10692-08-23T15:03:56.000Z"
+    }
+  }
+}
